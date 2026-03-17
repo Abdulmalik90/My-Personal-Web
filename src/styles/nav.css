@@ -1,11 +1,14 @@
+
 header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-color: red;
+    background-color: var(--primary);
+    color: var(--text);
     height: fit-content;
+    border-bottom: 1px solid var(--text-lighter);
 }
 
 header h1 {
@@ -13,6 +16,14 @@ header h1 {
     text-align: center;
     margin-top: auto;
     padding: 20px;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;                                      
+    
+}
+
+header h1:hover {
+    color: var(--secondary);
 }
 
 #header-buttons-container {
@@ -20,6 +31,83 @@ header h1 {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 5%;
-    margin-right: 10px;
+    gap: 4vw;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#header-buttons-container a {
+    text-decoration: none;
+    color: var(--text-lighter);
+    transition: all 0.5s ease;
+}
+
+#header-buttons-container a:hover {
+    color: var(--secondary);
+}
+
+#download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px; /* Better padding for a clickable button */
+    gap: 8px; /* Adds space between the icon and the text */
+    
+    /* The Fix */
+    flex-shrink: 0; /* Stops the parent container from crushing it */
+    color: white;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#download-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+#language-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px; /* Better padding for a clickable button */
+    gap: 8px; /* Adds space between the icon and the text */
+    
+    /* The Fix */
+    flex-shrink: 0; /* Stops the parent container from crushing it */
+    background-color: var(--primary);
+    color: var(--text-lighter);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#language-btn:hover {
+    color: var(--dark-light-hover);
+    background-color: var(--dark-light-bg-hover);
+}
+
+/* Fix the paragraph text wrapping */
+#download-btn p {
+    margin: 0; /* Removes default paragraph spacing */
+    white-space: nowrap; /* Forces "Download CV" to stay on one line */
+}
+
+#dark_button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--text-lighter);
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#dark_button:hover {
+    color: var(--dark-light-hover);
+    background-color: var(--dark-light-bg-hover);
+    
 }

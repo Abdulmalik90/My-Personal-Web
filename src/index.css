@@ -2,3 +2,33 @@
   padding: 0;
   margin: 0;
 }
+
+/* 1. Set the default English font */
+:root {
+    --font-primary: 'Inter', sans-serif;
+}
+
+/* 2. Swap the font when Arabic is active */
+:root:lang(ar) {
+    --font-primary: 'Cairo', sans-serif;
+}
+
+/* 3. Apply the font to your header */
+header h1 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 2rem; /* Default English size */
+    /* ... your other header h1 styles ... */
+}
+
+header a, header button {
+  font-family: var(--font-primary);
+}
+
+/* 4. The Magic Fix: Boost the size for ALL Arabic headings */
+html:lang(ar) h1, 
+html:lang(ar) h2, 
+html:lang(ar) h3 {
+    font-size: 1.15em; /* Increases Arabic size by 15% to match English visual weight */
+    line-height: 1.6;  /* Arabic often needs a bit more vertical breathing room */
+}

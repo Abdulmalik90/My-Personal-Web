@@ -1,0 +1,22 @@
+/* app.css */
+:root {
+    --primary: #f7f9fa;
+    --header-bg: rgba(247, 249, 250, 0.5);
+    --secondary: #00aeb1;
+    --secondary-hover: #00c0c3;
+    --text: #0e171e;
+    --text-lighter: #5e6a73;
+    --dark-light-hover: black;
+    --dark-light-bg-hover: #dfebed;
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --primary: #0e171e; /* Swapped background to dark */
+    --header-bg: rgba(14, 23, 30, 0.9);
+    --text: #f7f9fa; /* Swapped text to light */
+    --text-lighter: #a0abb2;
+    --dark-light-hover: white;
+    --dark-light-bg-hover: #1c2a35;
+    /* We keep the --secondary accent colors the same so your buttons stay vibrant! */
+}

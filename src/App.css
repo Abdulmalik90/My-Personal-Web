@@ -5,9 +5,13 @@
     --secondary: #00aeb1;
     --secondary-hover: #00c0c3;
     --text: #0e171e;
+    --reverse-text: #f7f9fa;
     --text-lighter: #5e6a73;
     --dark-light-hover: black;
     --dark-light-bg-hover: #dfebed;
+    --other-buttons: #ffffff;
+    --other-buttons-border: #d3d3d3;
+    --other-buttons-hover: #d3d3d3;
 }
 
 /* Dark Mode Variables */
@@ -15,8 +19,16 @@
     --primary: #080e13; /* Swapped background to dark */
     --header-bg: rgba(14, 23, 30, 0.286);
     --text: #f7f9fa; /* Swapped text to light */
+    --reverse-text: #0e171e;
     --text-lighter: #a0abb2;
     --dark-light-hover: white;
     --dark-light-bg-hover: #1c2a35;
+    --other-buttons: #11181d;
+    --other-buttons-border: rgb(54, 54, 54);
+    --other-buttons-hover: rgb(54, 54, 54);
     /* We keep the --secondary accent colors the same so your buttons stay vibrant! */
+}
+
+body {
+    background-color: var(--primary);
 }

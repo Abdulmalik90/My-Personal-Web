@@ -1,6 +1,7 @@
 import './App.css'
 import { LanguageProvider } from './components/LanguageContext'
 import Nav from './components/Nav'
+import Hero from './components/Hero'
 import { ThemeProvider } from './components/ThemeContext'
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
       <LanguageProvider>
 
         <Nav/>
-        
+
+        <Hero/>
+        <hr />
       </LanguageProvider>
 
     </ThemeProvider>

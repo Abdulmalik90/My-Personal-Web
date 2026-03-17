@@ -1,6 +1,7 @@
 
 header {
     display: grid;
+    width: 100vw;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
@@ -9,6 +10,8 @@ header {
     color: var(--text);
     height: fit-content;
     border-bottom: 1px solid var(--text-lighter);
+    position:fixed;
+    top: 0;
 }
 
 header h1 {
@@ -55,7 +58,6 @@ header h1:hover {
     
     /* The Fix */
     flex-shrink: 0; /* Stops the parent container from crushing it */
-    color: white;
     background-color: var(--secondary);
     border: none;
     border-radius: 10px;
@@ -66,6 +68,10 @@ header h1:hover {
 
 #download-btn:hover {
     background-color: var(--secondary-hover);
+}
+
+#download-btn p, #download-btn span {
+    color: white;
 }
 
 #language-btn{
@@ -138,27 +144,30 @@ header h1:hover {
         display: block; /* Show the hamburger button */
     }
 
-    /* Redesign the container into a vertical dropdown */
+    /* Redesign the container into a full-width dropdown */
     #header-buttons-container {
-        position: absolute;
-        top: 80px; /* Pushes it down below your header. Adjust if needed */
+        position: fixed; /* Changed from absolute to fixed. This breaks it out of the grid constraints! */
+        top: 80px; /* Adjust this to match your exact header height */
         left: 0;
         right: 0;
+        width: 100%; /* Force it to span the entire screen */
+        height: calc(100vh - 80px); /* Take up the rest of the screen vertically */
         background-color: var(--primary);
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center;
-        padding: 30px 0;
-        gap: 25px;
+        
+        flex-direction: column; 
+        justify-content: flex-start; /* Push items to the top */
+        align-items: center; /* Center items perfectly in the middle */
+        padding-top: 50px;
+        gap: 30px;
         margin: 0;
-        border-bottom: 1px solid var(--text-lighter);
-        box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+        border-top: 1px solid var(--text-lighter);
         
         /* Animation setup: Hide it by pushing it up and making it transparent */
         transform: translateY(-150%);
         opacity: 0;
-        pointer-events: none; /* Prevents clicking invisible links */
-        transition: all 0.4s ease-in-out;
-        z-index: -1; 
+        pointer-events: none; 
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        z-index: 100; 
     }
 
     /* When React adds the "mobile-open" class, slide it in! */
@@ -166,6 +175,11 @@ header h1:hover {
         transform: translateY(0);
         opacity: 1;
         pointer-events: auto;
-        z-index: 100;
+    }
+
+    /* Optional: Make the text slightly bigger on mobile so it's easier to tap */
+    #header-buttons-container a {
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 }

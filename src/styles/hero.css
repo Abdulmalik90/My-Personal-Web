@@ -1,0 +1,75 @@
+#hero-div {
+    margin: 200px auto 100px auto;
+    width: 90%;
+    
+}
+
+#hero-div h1 {
+    color: var(--text);
+    font-size: clamp(1.5rem, 5vw, 3.3rem);
+    width: 90%;
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#hero-div p {
+    color: var(--text-lighter);
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    width: 90%;
+    margin: 30px auto;
+    max-width: 950px;
+    text-align: center;
+}
+
+#hero-buttons-container {
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#hero-buttons-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 10px;
+    font-size: clamp(0.2rem, 2vw, 0.9rem);
+}
+
+#hero-buttons-container button span {
+    font-size: clamp(0.5rem, 2.5vw, 1.2rem);
+    transition: all 0.4s ease; /* This makes the movement smooth */
+}
+
+#view-btn:hover span {
+    transform: translateX(6px); /* Negative values move it left, positive move it right */
+}
+
+#view-btn {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 7px;
+    color: var(--reverse-text);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+#view-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+#contact-btn {
+    background-color: var(--other-buttons);
+    color: var(--text);
+    border: 1px solid var(--other-buttons-border);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#contact-btn:hover {
+    background-color: var(--other-buttons-hover);
+}

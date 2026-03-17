@@ -14,6 +14,11 @@ export const translation = {
         heroBtn1: "View My Work",
         heroBtn2: "Contact Me",
 
+        // Skills
+        skTitle: "Tech Stack & Skills",
+        skSubTitle: "Technologies I work with to build modern web applications",
+
+
     },
     ar: {
         // Header
@@ -29,6 +34,10 @@ export const translation = {
         heroSubTitle: "أنا طالب علوم حاسب ومطور ويب، أركز على تطوير تطبيقات ويب سريعة، متجاوبة، وتتمحور حول تجربة المستخدم.",
         heroBtn1: "استعراض أعمالي",
         heroBtn2: "تواصل معي",
+
+        // Skills Section
+        skTitle: "المهارات والتقنيات",
+        skSubTitle: "التقنيات التي أستخدمها لتطوير تطبيقات ويب حديثة",
     }
 }
 

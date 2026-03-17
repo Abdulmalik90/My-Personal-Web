@@ -1,0 +1,25 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: red;
+    height: fit-content;
+}
+
+header h1 {
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
+}
+
+#header-buttons-container {
+    grid-area: 1 / 3 / 2 / 6;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5%;
+    margin-right: 10px;
+}

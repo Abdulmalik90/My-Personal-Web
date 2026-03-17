@@ -111,3 +111,61 @@ header h1:hover {
     background-color: var(--dark-light-bg-hover);
     
 }
+
+/* --- MOBILE MENU STYLES --- */
+
+/* Hide hamburger button on desktop */
+.hamburger-btn {
+    display: none; 
+    background: transparent;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    grid-area: 1 / 5 / 2 / 6; /* Places it on the right side of your grid */
+    justify-self: end;
+    align-self: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hamburger-btn span {
+    font-size: 32px; /* Make the menu icon easy to tap */
+}
+
+/* Media Query for screens smaller than 850px (Tablets & Phones) */
+@media (max-width: 850px) {
+    .hamburger-btn {
+        display: block; /* Show the hamburger button */
+    }
+
+    /* Redesign the container into a vertical dropdown */
+    #header-buttons-container {
+        position: absolute;
+        top: 80px; /* Pushes it down below your header. Adjust if needed */
+        left: 0;
+        right: 0;
+        background-color: var(--primary);
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+        padding: 30px 0;
+        gap: 25px;
+        margin: 0;
+        border-bottom: 1px solid var(--text-lighter);
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+        
+        /* Animation setup: Hide it by pushing it up and making it transparent */
+        transform: translateY(-150%);
+        opacity: 0;
+        pointer-events: none; /* Prevents clicking invisible links */
+        transition: all 0.4s ease-in-out;
+        z-index: -1; 
+    }
+
+    /* When React adds the "mobile-open" class, slide it in! */
+    #header-buttons-container.mobile-open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 100;
+    }
+}

@@ -1,0 +1,148 @@
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+@media (max-width:850px) {
+    #projects-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+    }
+
+    .project-card {
+        margin: 10px auto;
+    }
+}
+
+.project-card {
+    width: 100%;
+    height: 100%; /* Changed from fit-content to 100% */
+    background-color: var(--card);
+    border-radius: 12px;
+    max-width: 500px;
+    border: 1px solid var(--other-buttons-border);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+    /* Make sure you still have these two flex properties from earlier! */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Nice hover float effect */
+    opacity: 1;
+}
+
+.project-card:hover .card-top img {
+    opacity: 0.7;
+}
+
+.card-top {
+    position: relative; /* THIS IS THE SECRET! It traps the absolute buttons inside this box */
+    width: 100%;
+    height: 220px; /* Give it a fixed height so the image has a specific box to fill */
+    background-color: #0b1114; /* Optional: A dark background while the image loads */
+}
+
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-top-link-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    
+    /* ADD THESE 3 LINES: */
+    opacity: 0; /* Makes the buttons invisible by default */
+    pointer-events: none; /* Prevents accidentally clicking invisible buttons */
+    transition: opacity 0.3s ease; /* Makes the fade-in effect smooth */
+}
+
+/* This reveals the buttons when the mouse hovers over the card */
+.project-card:hover .card-top-link-div {
+    opacity: 1;
+    pointer-events: auto; /* Makes the buttons clickable again */
+}
+
+.card-top-link-div a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Primary Button (Live Demo) */
+.card-top-link-div a:first-child {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.card-top-link-div a:first-child:hover {
+    background-color: var(--secondary-hover);
+}
+
+/* Secondary Button (GitHub) */
+.card-top-link-div a:last-child {
+    background-color: rgba(255, 255, 255, 0.05); /* Transparent look */
+    color: var(--text);
+    border: 1px solid var(--text-lighter);
+}
+
+.card-top-link-div a:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- The Bottom Text Section --- */
+.project-card h2 {
+    margin: 20px 20px 10px 20px;
+    font-size: clamp(0.7rem, 3vw, 1.4rem);
+    color: var(--text);
+    
+}
+
+.project-card p {
+    margin: 0 20px 20px 20px;
+    color: var(--text-lighter);
+    font-size: clamp(0.7rem, 2vw, 0.95rem);
+    line-height: 1.5;
+}
+
+/* --- The Tech Stack Tags --- */
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows tags to wrap to the next line if they don't fit */
+    gap: 10px;
+    margin: 0 20px 20px 20px;
+}
+
+.tech-stack-container span {
+    background-color: rgba(255, 255, 255, 0.08); /* Faint background matching image */
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.8rem;
+    font-weight: bold;
+}

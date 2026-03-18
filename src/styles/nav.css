@@ -6,12 +6,15 @@ header {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-color: var(--primary);
+    background-color: var(--header-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: var(--text);
     height: fit-content;
-    border-bottom: 1px solid var(--text-lighter);
+    border-bottom: 2px solid var(--line);
     position:fixed;
     top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -71,7 +74,7 @@ header h1:hover {
 }
 
 #download-btn p, #download-btn span {
-    color: white;
+    color: var(--reverse-text);
 }
 
 #language-btn{

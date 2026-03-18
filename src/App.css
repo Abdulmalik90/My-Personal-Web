@@ -1,7 +1,7 @@
 /* app.css */
 :root {
     --primary: #f7f9fa;
-    --header-bg: rgba(247, 249, 250, 0.224);
+    --header-bg: rgba(247, 249, 250, 0.786);
     --secondary: #00aeb1;
     --secondary-hover: #00c0c3;
     --text: #0e171e;
@@ -12,12 +12,14 @@
     --other-buttons: #ffffff;
     --other-buttons-border: #d3d3d3;
     --other-buttons-hover: #d3d3d3;
+    --line: #d8dfe4;
+    --card: white;
 }
 
 /* Dark Mode Variables */
 [data-theme="dark"] {
     --primary: #080e13; /* Swapped background to dark */
-    --header-bg: rgba(14, 23, 30, 0.286);
+    --header-bg: rgba(14, 23, 30, 0.622);
     --text: #f7f9fa; /* Swapped text to light */
     --reverse-text: #0e171e;
     --text-lighter: #a0abb2;
@@ -26,9 +28,32 @@
     --other-buttons: #11181d;
     --other-buttons-border: rgb(54, 54, 54);
     --other-buttons-hover: rgb(54, 54, 54);
+    --line: #161e25;
+    --card: #0e171e;
     /* We keep the --secondary accent colors the same so your buttons stay vibrant! */
 }
 
 body {
     background-color: var(--primary);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--line);
+}
+
+.section-title {
+    text-align: center;
+    color: var(--text);
+    margin: 80px auto 15px auto;
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    width: 90%;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-lighter);
+    margin: 10px auto 15px auto;
+    font-size: clamp(0.7rem, 5vw, 1.2rem);
+    width: 90%;
 }

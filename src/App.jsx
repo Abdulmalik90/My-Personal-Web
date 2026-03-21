@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import About from './components/About'
+import Footer from './components/Footer'
 import { ThemeProvider } from './components/ThemeContext'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
 
         <hr />
         
+        <Footer />
         
       </LanguageProvider>
 

@@ -38,8 +38,8 @@ header h1:hover {
     justify-content: end;
     align-items: center;
     gap: 4vw;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 #header-buttons-container a {

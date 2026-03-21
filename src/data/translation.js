@@ -92,7 +92,7 @@ export const translation = {
         // Footer
         footerTitle: "هل أنت مستعد لبناء شيء رائع؟",
         footerSubTitle: "دعنا نتواصل.",
-        footerRights: "© 2026 عبدالملك. جميع الحقوق محفوظة."
+        footerRightes: "© 2026 عبدالملك. جميع الحقوق محفوظة."
     }
 }
 

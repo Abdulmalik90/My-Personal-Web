@@ -34,6 +34,18 @@ export const translation = {
         //project 4
         proj4Title: "Cay Cafe WebSite",
         proj4SubTitle: "A modern, responsive landing page for a seaside cafe, featuring interactive table booking and direct WhatsApp ordering.",
+
+        // About
+        aboutTitle: "About",
+        about1: "When I am not studying Computer Science, I am building tools that solve real problems.",
+        about2: "I specialize in front-end development and have a strong interest in Human-Computer Interaction, ensuring that everything I build is intuitive and accessible.",
+        about3: "My goal is to create digital experiences that are not only visually appealing but also performant and user-friendly across all devices.",
+
+        // Footer
+        footerTitle: "Ready to build somthing great?",
+        footerSubTitle: "Let's connect.",
+        footerRightes: "© 2026 Abdulmalik. All rights reserved."
+
     },
     ar: {
         // Header
@@ -70,6 +82,17 @@ export const translation = {
         //project 4
         proj4Title: "موقع كاي كافي",
         proj4SubTitle: "صفحة هبوط حديثة ومتجاوبة لمقهى بإطلالة بحرية، تتميز بنظام لحجز الطاولات والطلب المباشر عبر واتساب.",
+
+        // About
+        aboutTitle: "نبذة عني",
+        about1: "عندما لا أكون منشغلاً بدراسة علوم الحاسب، أقوم ببناء أدوات تساهم في حل مشاكل حقيقية.",
+        about2: "أتخصص في تطوير الواجهات الأمامية، ولدي اهتمام كبير بمجال التفاعل بين الإنسان والحاسوب (HCI)، لضمان أن كل ما أبنيه بديهي وسهل الاستخدام للجميع.",
+        about3: "هدفي هو ابتكار تجارب رقمية لا تقتصر على الجاذبية البصرية فحسب، بل تتميز أيضاً بالأداء العالي وسهولة الاستخدام عبر جميع الأجهزة.",
+        
+        // Footer
+        footerTitle: "هل أنت مستعد لبناء شيء رائع؟",
+        footerSubTitle: "دعنا نتواصل.",
+        footerRights: "© 2026 عبدالملك. جميع الحقوق محفوظة."
     }
 }
 

@@ -14,12 +14,11 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 0px;
+        grid-row-gap: 25px;
     }
 
     .project-card {
-        margin: 10px auto;
+        margin: 40px auto;
     }
 }
 

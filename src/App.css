@@ -33,6 +33,36 @@
     /* We keep the --secondary accent colors the same so your buttons stay vibrant! */
 }
 
+/* --- Arabic Font Size Adjustments for the Footer --- */
+
+html:lang(ar) footer h1,
+html:lang(ar) footer h2,
+html:lang(ar) footer h3,
+html:lang(ar) footer p,
+html:lang(ar) footer span,
+html:lang(ar) footer a {
+    /* Increases the size by 15-20% to balance the visual weight with English */
+    font-size: 1.15em !important; 
+    
+    /* Arabic script usually needs a slightly taller line-height to prevent clipping */
+    line-height: 1.6 !important; 
+}
+
+/* --- Global Arabic Font Adjustments for Section Headers --- */
+
+html:lang(ar) .section-title {
+    font-size: 2.5rem; /* Bump this up until it feels right */
+    line-height: 1.4;
+}
+
+/* Note: check if you still have that typo "sectoin-subtitle" from earlier, 
+   or if you fixed it to "section-subtitle"! */
+html:lang(ar) .section-subtitle,
+html:lang(ar) .sectoin-subtitle { 
+    font-size: 1.25rem; /* Makes the paragraph text much more readable */
+    line-height: 1.6;
+}
+
 body {
     background-color: var(--primary);
 }

@@ -38,6 +38,7 @@ header h1:hover {
     justify-content: end;
     align-items: center;
     gap: 4vw;
+    width: 100vw;
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -149,23 +150,27 @@ header h1:hover {
 
     /* Redesign the container into a full-width dropdown */
     #header-buttons-container {
-        position: fixed; /* Changed from absolute to fixed. This breaks it out of the grid constraints! */
-        top: 80px; /* Adjust this to match your exact header height */
+        /* I recommend changing this to absolute, since the parent <header> is already fixed */
+        position: absolute; 
+        
+        /* THE FIX: Tell it to span from the first grid line to the last grid line */
+        grid-column: 1 / -1; 
+        
+        top: 80px; 
         left: 0;
         right: 0;
-        width: 100%; /* Force it to span the entire screen */
-        height: calc(100vh - 80px); /* Take up the rest of the screen vertically */
+        width: 100%; 
+        height: calc(100vh - 80px); 
         background-color: var(--primary);
         
         flex-direction: column; 
-        justify-content: flex-start; /* Push items to the top */
-        align-items: center; /* Center items perfectly in the middle */
+        justify-content: flex-start; 
+        align-items: center; 
         padding-top: 50px;
         gap: 30px;
         margin: 0;
         border-top: 1px solid var(--text-lighter);
         
-        /* Animation setup: Hide it by pushing it up and making it transparent */
         transform: translateY(-150%);
         opacity: 0;
         pointer-events: none; 

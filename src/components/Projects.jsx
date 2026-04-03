@@ -24,7 +24,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/JIC-Website" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/Social-media-web" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> Github
                             </a>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/Prayer-times" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
@@ -125,7 +125,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/Cay-Cafe" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
@@ -144,6 +144,8 @@ export default function Projects() {
 
                 </div>
             </div>
+
+            <button>Preview All Projects</button>
         </>
     );
 }

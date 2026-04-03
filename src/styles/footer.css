@@ -1,7 +1,7 @@
 .footer-subtitle {
     text-align: center;
     color: var(--text-lighter);
-    font-size: clamp(1.3rem, 3vw, 1.9rem);
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
 }
 
 #email-link {

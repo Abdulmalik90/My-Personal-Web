@@ -28,6 +28,16 @@ header h1 {
     
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional: Add a hover effect so users know it's a link! */
+header a:hover {
+    opacity: 0.8;
+}
+
 header h1:hover {
     color: var(--secondary);
 }
@@ -35,7 +45,9 @@ header h1:hover {
 #header-buttons-container {
     grid-area: 1 / 3 / 2 / 6;
     display: flex;
-    justify-content: end;
+    
+    justify-content: flex-end;
+    
     align-items: center;
     gap: 4vw;
     margin-right: 60px;
@@ -149,23 +161,27 @@ header h1:hover {
 
     /* Redesign the container into a full-width dropdown */
     #header-buttons-container {
-        position: fixed; /* Changed from absolute to fixed. This breaks it out of the grid constraints! */
-        top: 80px; /* Adjust this to match your exact header height */
+        /* I recommend changing this to absolute, since the parent <header> is already fixed */
+        position: absolute; 
+        
+        /* THE FIX: Tell it to span from the first grid line to the last grid line */
+        grid-column: 1 / -1; 
+        
+        top: 80px; 
         left: 0;
         right: 0;
-        width: 100%; /* Force it to span the entire screen */
-        height: calc(100vh - 80px); /* Take up the rest of the screen vertically */
+        width: 100%; 
+        height: calc(100vh - 80px); 
         background-color: var(--primary);
         
         flex-direction: column; 
-        justify-content: flex-start; /* Push items to the top */
-        align-items: center; /* Center items perfectly in the middle */
+        justify-content: flex-start; 
+        align-items: center; 
         padding-top: 50px;
         gap: 30px;
         margin: 0;
         border-top: 1px solid var(--text-lighter);
         
-        /* Animation setup: Hide it by pushing it up and making it transparent */
         transform: translateY(-150%);
         opacity: 0;
         pointer-events: none; 
@@ -185,4 +201,8 @@ header h1:hover {
         font-size: 1.2rem;
         font-weight: bold;
     }
+}
+
+#skills, #about {
+  scroll-margin-top: 100px; /* Adjust this number to match the height of your navbar! */
 }

@@ -1,4 +1,5 @@
 import { useState } from "react"; // 1. Import useState
+import { Link } from "react-router-dom";
 import { useLanguage } from "./LanguageContext"
 import { useTheme } from "./ThemeContext";
 import "../styles/nav.css"
@@ -18,7 +19,7 @@ export default function Nav(){
     return (
         <header>
             {/* logo */}
-            <a><h1>{t("name")}</h1></a>
+            <Link style={{textDecoration: "none"}} to="/"><h1>{t("name")}</h1></Link>
 
             {/* 3. The Hamburger Button (Hidden on Desktop) */}
             <button className="hamburger-btn" onClick={toggleMenu}>
@@ -31,9 +32,14 @@ export default function Nav(){
             {/* 4. buttons container - Add dynamic class "mobile-open" if state is true */}
             <div id="header-buttons-container" className={isMenuOpen ? "mobile-open" : ""}>
                 {/* Clicking a link should close the menu, so we add onClick to these too */}
-                <a href="#" onClick={() => setIsMenuOpen(false)}>{t("skills")}</a>
-                <a href="#" onClick={() => setIsMenuOpen(false)}>{t("projects")}</a>
-                <a href="#" onClick={() => setIsMenuOpen(false)}>{t("about")}</a>
+                
+                <Link to="/Home#skills" onClick={() => setIsMenuOpen(false)}>{t("skills")}</Link>
+                
+                
+                <Link to="/Projects" onClick={() => setIsMenuOpen(false)}>{t("projects")}</Link>
+                
+                
+                <Link to="/Home#about" onClick={() => setIsMenuOpen(false)}>{t("about")}</Link>
 
                 {/* download button */}
                 <button id="download-btn">

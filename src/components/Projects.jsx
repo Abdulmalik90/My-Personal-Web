@@ -1,4 +1,5 @@
 import { useLanguage } from "./LanguageContext";
+import { Link } from 'react-router-dom';
 import "../styles/projects.css";
 
 export default function Projects() {
@@ -24,7 +25,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/JIC-Website" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/Social-media-web" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> Github
                             </a>
                         </div>
                     </div>
@@ -91,7 +92,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/Prayer-times" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
@@ -125,7 +126,7 @@ export default function Projects() {
                                 {t("proLiveDemo")}
                             </a>
                             <a href="https://github.com/Abdulmalik90/Cay-Cafe" target="_blank" rel="noopener noreferrer">
-                                <i className="fa fa-github"></i> GitHub
+                                <i style={{fontSize: "20px"}} className="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
@@ -143,6 +144,12 @@ export default function Projects() {
                     </div>
 
                 </div>
+            </div>
+
+            <div className="prev-btn-container">
+                <Link style={{textDecoration: "none"}} to="/Projects">
+                    <button id="projects-preview-btn">{t("previewButton")}<span style={{margin: "5px"}} class="material-symbols-outlined">visibility</span></button>
+                </Link>
             </div>
         </>
     );

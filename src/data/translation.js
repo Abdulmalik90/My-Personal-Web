@@ -34,6 +34,8 @@ export const translation = {
         //project 4
         proj4Title: "Cay Cafe WebSite",
         proj4SubTitle: "A modern, responsive landing page for a seaside cafe, featuring interactive table booking and direct WhatsApp ordering.",
+        // preview button
+        previewButton: "Preview All Projects",
 
         // About
         aboutTitle: "About",
@@ -82,6 +84,8 @@ export const translation = {
         //project 4
         proj4Title: "موقع كاي كافي",
         proj4SubTitle: "صفحة هبوط حديثة ومتجاوبة لمقهى بإطلالة بحرية، تتميز بنظام لحجز الطاولات والطلب المباشر عبر واتساب.",
+        // preview button
+        previewButton: "عرض كل المشاريع",
 
         // About
         aboutTitle: "نبذة عني",

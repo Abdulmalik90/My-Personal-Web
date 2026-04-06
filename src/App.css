@@ -76,7 +76,7 @@ hr {
     text-align: center;
     color: var(--text);
     margin: 80px auto 15px auto;
-    font-size: clamp(1rem, 5vw, 2.5rem);
+    font-size: clamp(1rem, 5vw, 1.9rem);
     width: 90%;
 }
 

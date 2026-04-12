@@ -19,7 +19,7 @@ export default function Nav(){
     return (
         <header>
             {/* logo */}
-            <Link style={{textDecoration: "none"}} to="/"><h1>{t("name")}</h1></Link>
+            <Link style={{textDecoration: "none", color: "var(--text)"}} to="/"><h1>{t("name")}</h1></Link>
 
             {/* 3. The Hamburger Button (Hidden on Desktop) */}
             <button className="hamburger-btn" onClick={toggleMenu}>

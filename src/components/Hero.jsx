@@ -1,4 +1,5 @@
 import { useLanguage } from "./LanguageContext"
+import { Link } from "react-router-dom";
 import "../styles/hero.css"
 export default function Hero(){
 
@@ -10,11 +11,15 @@ export default function Hero(){
             <p>{t("heroSubTitle")}</p>
 
             <div id="hero-buttons-container">
-                <button id="view-btn">
-                    {t("heroBtn1")}
-                    <span style={{marginLeft: "6px", marginRight: "8px"}} class="material-symbols-outlined">arrow_forward</span>
-                </button>
 
+                <Link to="/projects" style={{textDecoration: "none"}}>
+                    <button id="view-btn">
+                        {t("heroBtn1")}
+                        <span style={{marginLeft: "6px", marginRight: "8px"}} class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </Link>
+
+                
                 <button id="contact-btn">
                     <span style={{marginRight: "6px", marginLeft: "6px"}} class="material-symbols-outlined">mail</span>
                     {t("heroBtn2")}

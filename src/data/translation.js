@@ -43,6 +43,20 @@ export const translation = {
         about2: "I specialize in front-end development and have a strong interest in Human-Computer Interaction, ensuring that everything I build is intuitive and accessible.",
         about3: "My goal is to create digital experiences that are not only visually appealing but also performant and user-friendly across all devices.",
 
+        // Certifications Section
+        certTitle: "Licenses & Certifications",
+        showCert: "View Credential",
+        
+        // 1. Google Certificate
+        cert1Title: "Google AI Skills",
+        cert1SubTitle: "The course focuses on introducing learners to artificial intelligence concepts and practical skills, helping participants understand how AI works and how it can be applied in real-world scenarios.",
+        // 2. UX-UI Certificate
+        cert2Title: "UX & UI Design",
+        cert2SubTitle: "Advanced training in user-centric design principles, wireframing, and creating highly intuitive user interfaces.",
+        // 3. OOP / Advanced Programming
+        cert3Title: "Object-Oriented Programming",
+        cert3SubTitle: "Deep dive into core computer science concepts, class structures, inheritance, and scalable software architecture.",
+
         // Footer
         footerTitle: "Ready to build somthing great?",
         footerSubTitle: "Let's connect.",
@@ -92,6 +106,20 @@ export const translation = {
         about1: "عندما لا أكون منشغلاً بدراسة علوم الحاسب، أقوم ببناء أدوات تساهم في حل مشاكل حقيقية.",
         about2: "أتخصص في تطوير الواجهات الأمامية، ولدي اهتمام كبير بمجال التفاعل بين الإنسان والحاسوب (HCI)، لضمان أن كل ما أبنيه بديهي وسهل الاستخدام للجميع.",
         about3: "هدفي هو ابتكار تجارب رقمية لا تقتصر على الجاذبية البصرية فحسب، بل تتميز أيضاً بالأداء العالي وسهولة الاستخدام عبر جميع الأجهزة.",
+
+        // Certifications Section
+        certTitle: "الرخص والشهادات",
+        showCert: "عرض الشهادة",
+        
+        // 1. Google Certificate
+        cert1Title: "مهارات Google الذكاء الإصطناعي",
+        cert1SubTitle: "شهادة شاملة تركز هذه الدورة على تعريف المتعلمين بمفاهيم الذكاء الاصطناعي والمهارات العملية، ومساعدة المشاركين على فهم كيفية عمل الذكاء الاصطناعي وكيف يمكن تطبيقه في سيناريوهات العالم الحقيقي.",   
+        // 2. UX-UI Certificate
+        cert2Title: "تصميم تجربة وواجهة المستخدم (UX/UI)",
+        cert2SubTitle: "تدريب متقدم على مبادئ التصميم المتمحور حول المستخدم، التخطيط الهيكلي، وإنشاء واجهات استخدام بديهية.",
+        // 3. OOP / Advanced Programming
+        cert3Title: "البرمجة كائنية التوجه (OOP)",
+        cert3SubTitle: "دراسة متعمقة لمفاهيم علوم الحاسب الأساسية، هيكلة الفئات، الوراثة، وبناء برمجيات قابلة للتوسع.",
         
         // Footer
         footerTitle: "هل أنت مستعد لبناء شيء رائع؟",

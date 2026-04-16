@@ -1,30 +1,28 @@
-#projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+.home-cert-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* THIS is the magic line that forces equal heights */
+    flex-wrap: wrap; /* Allows cards to wrap if screen gets slightly smaller */
+    gap: 20px;
     width: 90%;
-    max-width: 1000px;
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 @media (max-width:850px) {
-    #projects-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-row-gap: 25px;
+
+    .cert-card {
+        margin: 40px auto;
+        width: 90% !important;
     }
 
-    .project-card {
-        margin: 40px auto;
+    .home-cert-container{
+        flex-direction: column;
     }
 }
 
-.project-card {
-    width: 100%;
-    height: 100%; /* Changed from fit-content to 100% */
+.cert-card {
+    width: 30%; /* Leave this as 30% for the Flexbox layout */
+    /* REMOVE height: 100%; from here */
     background-color: var(--card);
     border-radius: 12px;
     max-width: 500px;
@@ -32,17 +30,16 @@
     overflow: hidden;
     transition: transform 0.3s ease;
     
-    /* Make sure you still have these two flex properties from earlier! */
     display: flex;
     flex-direction: column;
 }
 
-.project-card:hover {
+.cert-card:hover {
     transform: translateY(-5px); /* Nice hover float effect */
     opacity: 1;
 }
 
-.project-card:hover .card-top img {
+.cert-card:hover .card-top img {
     opacity: 0.7;
 }
 
@@ -77,53 +74,54 @@
 }
 
 /* This reveals the buttons when the mouse hovers over the card */
-.project-card:hover .card-top-link-div {
+.cert-card:hover .card-top-link-div {
     opacity: 1;
     pointer-events: auto; /* Makes the buttons clickable again */
 }
 
-.card-top-link-div a {
+.card-top-link-div button {
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
+    border: none;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 /* Primary Button (Live Demo) */
-.card-top-link-div a:first-child {
+.card-top-link-div button:first-child {
     background-color: var(--secondary);
     color: white;
 }
 
-.card-top-link-div a:first-child:hover {
+.card-top-link-div button:first-child:hover {
     background-color: var(--secondary-hover);
 }
 
-/* Secondary Button (GitHub) */
-.card-top-link-div a:last-child {
-    background-color: rgba(255, 255, 255, 0.05); /* Transparent look */
-    color: white;
-    border: 1px solid var(--text-lighter);
-}
-
-.card-top-link-div a:last-child:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
 /* --- The Bottom Text Section --- */
-.project-card h2 {
+.card-text-content {
+    /* This tells the text area to expand and eat up all the empty space! */
+    flex-grow: 1; 
+    
+    /* Optional: keeps your text aligned nicely inside the growing box */
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-card h2 {
     margin: 20px 20px 10px 20px;
     font-size: clamp(0.7rem, 3vw, 1.4rem);
     color: var(--text);
     
 }
 
-.project-card p {
+.cert-card p {
     margin: 0 20px 20px 20px;
     color: var(--text-lighter);
     font-size: clamp(0.7rem, 2vw, 0.95rem);
@@ -135,7 +133,7 @@
     display: flex;
     flex-wrap: wrap; /* Allows tags to wrap to the next line if they don't fit */
     gap: 10px;
-    margin: 0 20px 20px 20px;
+    margin: auto 20px 20px 20px;
 }
 
 .tech-stack-container span {
@@ -145,27 +143,4 @@
     border-radius: 20px; /* Pill shape */
     font-size: 0.8rem;
     font-weight: bold;
-}
-
-.prev-btn-container {
-    width: fit-content;
-    margin: 30px auto;
-}
-
-#projects-preview-btn {
-    padding: 10px;
-    font-size: clamp(0.7rem, 2vw, 1.2rem);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: var(--secondary);
-    color: white;
-    border: none;
-    transition: all 0.5s ease;
-}
-
-#projects-preview-btn:hover {
-    background-color: var(--secondary-hover);
 }

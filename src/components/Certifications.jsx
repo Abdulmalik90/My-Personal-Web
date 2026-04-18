@@ -33,7 +33,7 @@ export default function Certifications(){
 
                     {
                         
-                        cert.map((certi, i)=>(
+                        cert.slice(0, 3).map((certi, i)=>(
                             
                             <CertCard id={certi.id} 
                             photoPath={certi.photoPath}
@@ -48,7 +48,7 @@ export default function Certifications(){
                     
                 </div>
                 
-                {/* Preview all Certification Button */}
+                {/* Preview all Certification */}
                 <div className="view-all-container">
                     <Link to="/all-certifications" className="view-all-btn">
                         {t("viewAllCerts")}

@@ -1,11 +1,12 @@
 .home-cert-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: stretch; /* THIS is the magic line that forces equal heights */
     flex-wrap: wrap; /* Allows cards to wrap if screen gets slightly smaller */
     gap: 20px;
     width: 90%;
     margin: 40px auto;
+    max-width: 1600px;
 }
 
 @media (max-width:850px) {

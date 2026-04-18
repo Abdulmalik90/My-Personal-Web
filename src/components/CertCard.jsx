@@ -2,7 +2,7 @@ import { useLanguage } from "./LanguageContext";
 import "../styles/certifications.css"
 
 // Notice we added customTitle and customDesc to the props here
-export default function CertCard({id, photoPath, techTags, customTitle, customDesc}) {
+export default function CertCard({id, photoPath, techTags, customTitle, customDesc, showDialog}) {
     const { t } = useLanguage();
     
     // Check if we have a custom title/desc from GitHub. If not, use the translation.
@@ -16,7 +16,7 @@ export default function CertCard({id, photoPath, techTags, customTitle, customDe
                 <img src={photoPath} alt="Project Screenshot" /> 
                 
                 <div className="card-top-link-div">
-                    <button  target="_blank" rel="noopener noreferrer">
+                    <button  target="_blank" rel="noopener noreferrer" onClick={()=>{showDialog(photoPath, title, subtitle)}}>
                         <span className="material-symbols-outlined">visibility</span>
                         {t("showCert")}
                     </button>

@@ -56,6 +56,7 @@ export const translation = {
         // 3. OOP / Advanced Programming
         cert3Title: "Object-Oriented Programming",
         cert3SubTitle: "Deep dive into core computer science concepts, class structures, inheritance, and scalable software architecture.",
+        closeDialog: "close",
 
         // Footer
         footerTitle: "Ready to build somthing great?",
@@ -120,6 +121,7 @@ export const translation = {
         // 3. OOP / Advanced Programming
         cert3Title: "البرمجة كائنية التوجه (OOP)",
         cert3SubTitle: "دراسة متعمقة لمفاهيم علوم الحاسب الأساسية، هيكلة الفئات، الوراثة، وبناء برمجيات قابلة للتوسع.",
+        closeDialog: "إغلاق",
         
         // Footer
         footerTitle: "هل أنت مستعد لبناء شيء رائع؟",

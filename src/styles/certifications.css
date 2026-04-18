@@ -145,3 +145,38 @@
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+/* --- View All Button Styles --- */
+.view-all-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 60px; /* Gives nice breathing room before the next section */
+}
+
+.view-all-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 32px;
+    background-color: transparent;
+    color: var(--secondary); /* Uses your existing accent color */
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: var(--secondary);
+    color: white;
+    transform: translateY(-4px); /* Floats up slightly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Flip the arrow direction for Arabic layout! */
+html:lang(ar) .view-all-btn .material-symbols-outlined {
+    transform: rotate(180deg);
+}

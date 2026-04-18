@@ -34,6 +34,7 @@ export const translation = {
         //project 4
         proj4Title: "Cay Cafe WebSite",
         proj4SubTitle: "A modern, responsive landing page for a seaside cafe, featuring interactive table booking and direct WhatsApp ordering.",
+        
         // preview button
         previewButton: "Preview All Projects",
 
@@ -56,7 +57,20 @@ export const translation = {
         // 3. OOP / Advanced Programming
         cert3Title: "Object-Oriented Programming",
         cert3SubTitle: "Deep dive into core computer science concepts, class structures, inheritance, and scalable software architecture.",
+        // 4. Command Line 101
+        cert4Title: "Command Line 101",
+        cert4SubTitle: "The course focuses on the introductoin of the command line",
+        // 5. Command Line 102
+        cert5Title: "Command Line 102",
+        cert5SubTitle: "This course about the commands those help to know more details of types of commands and how they work.",
         closeDialog: "close",
+        viewAllCerts: "View All Certifications",
+
+        // All Certification Page
+        "AI": "Artificial Intelligence",
+        "Design": "UX & UI Design",
+        "Web Development": "Web Development",
+        "Operating Systems": "Operating Systems",
 
         // Footer
         footerTitle: "Ready to build somthing great?",
@@ -121,8 +135,21 @@ export const translation = {
         // 3. OOP / Advanced Programming
         cert3Title: "البرمجة كائنية التوجه (OOP)",
         cert3SubTitle: "دراسة متعمقة لمفاهيم علوم الحاسب الأساسية، هيكلة الفئات، الوراثة، وبناء برمجيات قابلة للتوسع.",
+        // 4. Comman Line 101
+        cert4Title: "موجه الأوامر 101",
+        cert4SubTitle: "دورة أساسيات موجه الأوامر في الويندوز",
+        // 5. Comman Line 102
+        cert5Title: "موجه الأوامر 102",
+        cert5SubTitle: "تتحدث هذه الدورة على الأوامر التي تساعد في معرفة تفاصيل أكثر عن الأنواع المختلفة للأوامر وكيفية عملها.",
         closeDialog: "إغلاق",
-        
+        viewAllCerts: "عرض جميع الشهادات",
+
+        // All Certification Page
+        "AI": "الذكاء الاصطناعي",
+        "Design": "تصميم واجهة وتجربة المستخدم",
+        "Web Development": "تطوير الويب",
+        "Operating Systems": "أنظمة التشغيل",
+
         // Footer
         footerTitle: "هل أنت مستعد لبناء شيء رائع؟",
         footerSubTitle: "دعنا نتواصل.",

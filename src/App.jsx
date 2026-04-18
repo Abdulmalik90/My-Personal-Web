@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer'
 import { ThemeProvider } from './components/ThemeContext'
 import ScrollToHash from './components/ScrollToHash.jsx';
+import AllCertsPage from './components/pages/AllCertsPage.jsx';
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/Home' element={<Home/>} />
+          <Route path='/all-certifications' element={<AllCertsPage/>} />
           <Route path='/Projects' element={<ProjectsPage/>} />
         </Routes>
         

@@ -3,6 +3,7 @@ import CertCard from "./CertCard";
 import { cert } from "../data/certificationsData";
 import CertDialog from "./CertDialog";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export default function Certifications(){
 
     const [openDialog, setOpenDialog] = useState(false);
@@ -46,9 +47,20 @@ export default function Certifications(){
                     }
                     
                 </div>
-
+                
+                {/* Preview all Certification Button */}
+                <div className="view-all-container">
+                    <Link to="/all-certifications" className="view-all-btn">
+                        {t("viewAllCerts")}
+                        <span className="material-symbols-outlined" style={{ fontSize: "1.2rem" }}>
+                            arrow_forward
+                        </span>
+                    </Link>
+                </div>    
                 
             </div>
+
+            
 
             <CertDialog open={openDialog} dialogInfo={dialogInfo} closeDialog={closeDialog} />
         </>

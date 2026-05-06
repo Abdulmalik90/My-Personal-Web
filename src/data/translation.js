@@ -9,13 +9,18 @@ export const translation = {
         language: "العربية",
 
         // Hero
+        heroWelcome: "Hi, I'm ",
         heroTitle: "Building Digital Experiences That Work Perfectly.",
         heroSubTitle: "I am a Computer Science student and Web Developer focused on creating fast, responsive, and user-centric web applications.",
         heroBtn1: "View My Work",
         heroBtn2: "Contact Me",
 
         // Skills
-        skTitle: "Tech Stack & Skills",
+        skTopBarLabel: "STACK",
+        skTopBarText: "10 technologies • always learning",
+        skTitle1: "Tools",
+        skTitle2: "that ",
+        skTitle3: "ship",
         skSubTitle: "Technologies I work with to build modern web applications",
 
         // Projects
@@ -88,13 +93,18 @@ export const translation = {
         language: "English",
 
         // Hero
+        heroWelcome: "أهلا، انا ",
         heroTitle: "بناء تجارب رقمية تعمل بشكل مثالي",
         heroSubTitle: "أنا طالب علوم حاسب ومطور ويب، أركز على تطوير تطبيقات ويب سريعة، متجاوبة، وتتمحور حول تجربة المستخدم.",
         heroBtn1: "استعراض أعمالي",
         heroBtn2: "تواصل معي",
 
         // Skills Section
-        skTitle: "المهارات والتقنيات",
+        skTopBarLabel: "التقنيات",
+        skTopBarText: "10 تقنيات • دائم التعلم",
+        skTitle1: "أدوات ",
+        skTitle2: " ",
+        skTitle3: "للإنجاز",
         skSubTitle: "التقنيات التي أستخدمها لتطوير تطبيقات ويب حديثة",
 
         // Projects

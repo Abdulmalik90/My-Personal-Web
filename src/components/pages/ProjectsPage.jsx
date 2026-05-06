@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // Replace this with your actual GitHub username!
+    // Git hub user name:
     const GITHUB_USERNAME = "Abdulmalik90"; 
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export default function ProjectsPage() {
                 
                 const data = await response.json();
                 
-                // Filter out forks so it only shows your original work
+                // Filter out forks so it only shows my original work
                 const myProjects = data.filter(repo => !repo.fork);
                 
                 setProjects(myProjects);

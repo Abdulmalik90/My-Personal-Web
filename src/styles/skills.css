@@ -1,24 +1,151 @@
-#skills-btn-container {
+/* --- Main Container --- */
+#skills-section {
     width: 90%;
-    max-width: 900px;
-    flex-wrap: wrap;
-    margin: 20px auto 80px auto;
+    max-width: 1000px;
+    margin: 150px auto;
+    color: var(--text);
+}
+
+/* --- Top Status Bar --- */
+.skills-top-bar {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+    opacity: 0.8;
+}
+
+.status-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 2px;
+}
+
+.section-symbol { color: var(--text-lighter); }
+.section-num { color: var(--secondary); font-weight: bold; }
+.section-label { color: var(--text-lighter); }
+
+.status-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(94, 234, 212, 0.5) 0%, rgba(255,255,255,0.05) 100%);
+    margin: 0 30px;
+}
+
+.status-right {
+    display: flex;
+    align-items: center;
+    color: var(--text-lighter);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    margin-inline-end: 10px;
+    box-shadow: 0 0 8px var(--secondary);
+}
+
+/* --- Header Section --- */
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Changed from center to flex-start to align top */
+    margin-bottom: 60px;
+    gap: 40px;
+    text-align: start; /* Ensures text aligns to the correct reading edge */
+}
+
+.skills-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    margin: 0;
+    flex: 1;
+}
+
+/* Adjust the title specifically for Arabic to make it look balanced */
+[dir="rtl"] .skills-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.highlight-italic {
+    color: var(--secondary);
+    font-style: italic;
+    font-weight: 500;
+}
+
+.skills-desc {
+    flex: 1;
+    max-width: 450px;
+    color: var(--text-lighter);
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* --- Skills Pills --- */
+#skills-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
 .skill-btn {
-    padding: 10px 20px;
-    background-color: var(--other-buttons);
-    border: 1px solid var(--other-buttons-border);
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
-    border-radius: 20px;
-    transition: all 0.4s ease;
+    padding: 12px 24px;
+    border-radius: 30px;
+    
+    /* Font fixes for clarity */
+    font-family: inherit; /* Inherits your clean main website font */
+    font-size: 0.95rem;   /* Made it slightly larger */
+    font-weight: 500;     /* Made it bolder */
+    letter-spacing: 0.5px;
+    
+    cursor: default;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skill-btn:hover {
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(94, 234, 212, 0.15), inset 0 0 10px rgba(94, 234, 212, 0.05);
+    transform: translateY(-2px);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 900px) {
+    .skills-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-desc {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .status-line {
+        display: none; /* Hides the line on mobile so text doesn't get squished */
+    }
+
+    .skills-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #skills-btn-container {
+        justify-content: center; /* Centers the pills on very small screens */
+    }
 }

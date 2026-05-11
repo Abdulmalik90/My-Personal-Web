@@ -24,7 +24,8 @@ export const translation = {
         skSubTitle: "Technologies I work with to build modern web applications",
 
         // Projects
-        proTitle: "Featured Projects",
+        proTitle: "Things I have",
+        proTitle2: "Shipped",
         proSubtitle: "A selection of projects I have built and contributed to",
         proLiveDemo: "Live Demo",
         //project 1
@@ -108,7 +109,8 @@ export const translation = {
         skSubTitle: "التقنيات التي أستخدمها لتطوير تطبيقات ويب حديثة",
 
         // Projects
-        proTitle: "مشاريع مميزة",
+        proTitle: "أشياء قمت بـ",
+        proTitle2: "إنجازها",
         proSubtitle: "مجموعة مختارة من المشاريع التي قمت ببنائها والمساهمة فيها",
         proLiveDemo: "العرض المباشر",
         //project 1

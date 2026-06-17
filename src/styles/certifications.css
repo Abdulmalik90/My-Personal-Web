@@ -29,7 +29,7 @@
     max-width: 500px;
     border: 1px solid var(--other-buttons-border);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     
     display: flex;
     flex-direction: column;
@@ -37,6 +37,8 @@
 
 .cert-card:hover {
     transform: translateY(-5px); /* Nice hover float effect */
+    box-shadow: 5px 5px 20px var(--secondary);
+    border: 1px solid var(--secondary);
     opacity: 1;
 }
 
@@ -132,6 +134,7 @@
 /* --- The Tech Stack Tags --- */
 .tech-stack-container {
     display: flex;
+    
     flex-wrap: wrap; /* Allows tags to wrap to the next line if they don't fit */
     gap: 10px;
     margin: auto 20px 20px 20px;
@@ -139,7 +142,9 @@
 
 .tech-stack-container span {
     background-color: rgba(255, 255, 255, 0.08); /* Faint background matching image */
-    color: var(--text);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    
     padding: 6px 12px;
     border-radius: 20px; /* Pill shape */
     font-size: 0.8rem;

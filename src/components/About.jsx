@@ -40,7 +40,7 @@ export default function About() {
                     <div className="ab-rule-label">
                         <span style={{ color: DIM }}>§</span>{' '}
                         <span style={{ color: VIOLET }}>03</span>{' '}
-                        <span style={{ color: DIM, marginLeft: 4 }}>PROFILE</span>
+                        <span style={{ color: DIM, marginLeft: 4 }}>{t("aboutProfile")}</span>
                     </div>
                     <div className="ab-rule-line" />
                     <div className="ab-rule-meta">
@@ -51,7 +51,7 @@ export default function About() {
 
                 <div className="ab-title-row">
                     <h5 className="ab-heading">
-                        {t("aboutTitle1")}<br />{t("aboutTitle2")}{' '}
+                        <em style={{color: "var(--text)"}}>{t("aboutTitle1")}<br />{t("aboutTitle2")}{' '}</em>
                         <em style={{ fontWeight: 400, fontStyle: 'italic', color: VIOLET }}>{t("aboutTitle3")}</em>
                     </h5>
                     <p className="ab-subtitle">
@@ -67,7 +67,7 @@ export default function About() {
                     {/* Drop-cap paragraph */}
                     <p className="ab-dropcap-p">
                         <span className="ab-dropcap">{t("abouti")}</span>
-                        {t('about2').replace(/^I/, '')}
+                        <span style={{color: "var(--text-lighter)"}}>{t('about2').replace(/^I/, '')}</span>
                     </p>
 
                     {/* Two-column paragraph */}

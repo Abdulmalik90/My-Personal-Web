@@ -57,6 +57,7 @@ dialog::backdrop {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-left: 1px solid black;
 }
 
 /* Make the text slightly larger to match the new modal size */
@@ -108,6 +109,7 @@ dialog::backdrop {
     
     .modal-info {
         padding: 25px; /* Shrinks the padding so text fits better on small screens */
+        border-top: 1px solid black;
     }
     
     .modal-info h2 {

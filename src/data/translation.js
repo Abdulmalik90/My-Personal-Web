@@ -24,6 +24,7 @@ export const translation = {
         skSubTitle: "Technologies I work with to build modern web applications",
 
         // Projects
+        projHeader: "work",
         proTitle: "Things I have",
         proTitle2: "Shipped",
         proSubtitle: "A selection of projects I have built and contributed to",
@@ -45,6 +46,7 @@ export const translation = {
         previewButton: "Preview All Projects",
 
         // About
+        aboutProfile: "PROFILE",
         aboutHeader: "Dammam · CS '26",
         aboutTitle1: "A bit",
         aboutTitle2: "about",
@@ -75,7 +77,9 @@ export const translation = {
         aboutOpenTo2: "Internships, freelance front-end work, and short collaborations.",
 
         // Certifications Section
-        certTitle: "Licenses & Certifications",
+        certTitle1: "Licenses & ",
+        certTitle2: "Certifications",
+        certSubtitle: "Continuous validation of my technical skills and expertise through industry-recognized certifications.",
         showCert: "View Credential",
         
         // 1. Google Certificate
@@ -133,6 +137,7 @@ export const translation = {
         skSubTitle: "التقنيات التي أستخدمها لتطوير تطبيقات ويب حديثة",
 
         // Projects
+        projHeader: "المشاريع",
         proTitle: "أشياء قمت بـ",
         proTitle2: "إنجازها",
         proSubtitle: "مجموعة مختارة من المشاريع التي قمت ببنائها والمساهمة فيها",
@@ -153,6 +158,7 @@ export const translation = {
         previewButton: "عرض كل المشاريع",
 
         // About
+        aboutProfile: "التعريف",
         aboutHeader: "الدمام · علوم حاسب '26",
         aboutTitle1: "القليل",
         aboutTitle2: " ",
@@ -183,7 +189,9 @@ export const translation = {
         aboutOpenTo2: "التدريب الداخلي، والعمل الحر في مجال تطوير واجهات المستخدم، والتعاونات القصيرة.",
 
         // Certifications Section
-        certTitle: "الرخص والشهادات",
+        certTitle1: "الرخص و ",
+        certTitle2: "الشهادات",
+        certSubtitle: "توثيق مستمر لمهاراتي وخبراتي التقنية من خلال أبرز الشهادات المعتمدة في المجال.",
         showCert: "عرض الشهادة",
         
         // 1. Google Certificate

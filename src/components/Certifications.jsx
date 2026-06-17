@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 export default function Certifications(){
 
+
     const [openDialog, setOpenDialog] = useState(false);
     const [dialogInfo, setDialogInfo] = useState({
         img: "",
@@ -26,8 +27,34 @@ export default function Certifications(){
 
     return (
         <>
+            {/* ── Section header ── */}
+            <div className="fs-header-inner">
+                {/* Top rule row */}
+                <div className="fs-rule-row">
+                    <div className="fs-rule-label">
+                        <span className="fs-dim">§</span> <span className="fs-amber">04</span>{' '}
+                        <span className="fs-dim" style={{ marginLeft: 4 }}>{t("certTitle2")}</span>
+                    </div>
+                    <div className="fs-rule-line" />
+                    <div className="fs-rule-meta">
+                        <span className="fs-blink fs-amber">•</span>{' '}
+                        {t("certTitle2")}: {cert.length} 
+                    </div>
+                </div>
+
+                {/* Title + subtitle */}
+                <div className="fs-title-row">
+                    <h2 className="fs-heading" >
+                        {t("certTitle1")}{' '}
+                        <em style={{ fontWeight: 400, fontStyle: 'italic', color: 'var(--secondary)' }}>{t("certTitle2")}</em>
+                    </h2>
+                    <p className="fs-subtitle">
+                        {t("certSubtitle") || "A selection of products and prototypes — built solo, with classmates, or against tight deadlines. Each one taught me something."}
+                    </p>
+                </div>
+            </div>
+
             <div>
-                <h1 className="section-title">{t("certTitle")}</h1>
 
                 <div className="home-cert-container" >
 

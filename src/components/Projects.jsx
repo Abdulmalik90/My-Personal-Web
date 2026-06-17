@@ -29,12 +29,12 @@ export default function Projects() {
                 <div className="fs-rule-row">
                     <div className="fs-rule-label">
                         <span className="fs-dim">§</span> <span className="fs-amber">02</span>{' '}
-                        <span className="fs-dim" style={{ marginLeft: 4 }}>WORK</span>
+                        <span className="fs-dim" style={{ marginLeft: 4 }}>{t("projHeader")}</span>
                     </div>
                     <div className="fs-rule-line" />
                     <div className="fs-rule-meta">
                         <span className="fs-blink fs-amber">•</span>{' '}
-                        {projects.length} projects · 2024–25
+                        {t("projHeader")}: {projects.length}  | 2026
                     </div>
                 </div>
 

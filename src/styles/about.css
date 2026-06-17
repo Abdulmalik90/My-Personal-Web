@@ -67,6 +67,10 @@
     animation: fsHFade 0.6s 0.25s both;
 }
 
+[dir="rtl"] .ad-heading {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
 .ab-subtitle {
     font-size: 17px;
     color: #94a3b8;

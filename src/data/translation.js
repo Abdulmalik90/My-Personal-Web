@@ -45,10 +45,34 @@ export const translation = {
         previewButton: "Preview All Projects",
 
         // About
-        aboutTitle: "About",
+        aboutHeader: "Dammam · CS '26",
+        aboutTitle1: "A bit",
+        aboutTitle2: "about",
+        aboutTitle3: "me",  
+        about0: "Computer Science student by day, builder by night. Front-end focused,with a soft spot for human-computer interaction and quietly intuitive interfaces." ,
+        abouti: "I",
         about1: "When I am not studying Computer Science, I am building tools that solve real problems.",
         about2: "I specialize in front-end development and have a strong interest in Human-Computer Interaction, ensuring that everything I build is intuitive and accessible.",
         about3: "My goal is to create digital experiences that are not only visually appealing but also performant and user-friendly across all devices.",
+        // about currently
+        aboutCTitle: "CURRENTLY",
+        aboutClive: "live",
+        aboutCReading: "READING",
+        aboutCReading2: "Refactoring UI",
+        aboutCBuilding: "BUILDING",
+        aboutCBuilding2: "A booking flow for Cay Cafe",
+        aboutCLearning: "Learning",
+        aboutCLearning2: "Back-End",
+        aboutCDrinking: "Drinking",
+        aboutCDrinking2: "Tea",
+        // about rest of the table
+        aboutProjects: "PROJECTS",
+        aboutCoding: "Coding",
+        aboutCodingYears: "yrs",
+        aboutCertifications: "CERTIFICATIONS",
+        aboutDrink: "Tea/Day",
+        aboutOpenTo: "Open To",
+        aboutOpenTo2: "Internships, freelance front-end work, and short collaborations.",
 
         // Certifications Section
         certTitle: "Licenses & Certifications",
@@ -129,10 +153,34 @@ export const translation = {
         previewButton: "عرض كل المشاريع",
 
         // About
-        aboutTitle: "نبذة عني",
+        aboutHeader: "الدمام · علوم حاسب '26",
+        aboutTitle1: "القليل",
+        aboutTitle2: " ",
+        aboutTitle3: "عني",  
+        about0: "طالب علوم حاسوب نهاراً، ومطور برامج ليلاً. متخصص في تطوير واجهات المستخدم، ولدي شغف بالتفاعل بين الإنسان والحاسوب والواجهات البديهية والهادئة." ,
+        abouti: "</>",
         about1: "عندما لا أكون منشغلاً بدراسة علوم الحاسب، أقوم ببناء أدوات تساهم في حل مشاكل حقيقية.",
         about2: "أتخصص في تطوير الواجهات الأمامية، ولدي اهتمام كبير بمجال التفاعل بين الإنسان والحاسوب (HCI)، لضمان أن كل ما أبنيه بديهي وسهل الاستخدام للجميع.",
         about3: "هدفي هو ابتكار تجارب رقمية لا تقتصر على الجاذبية البصرية فحسب، بل تتميز أيضاً بالأداء العالي وسهولة الاستخدام عبر جميع الأجهزة.",
+        // about currently
+        aboutCTitle: "حاليا",
+        aboutClive: "مباشر",
+        aboutCReading: "القراءة",
+        aboutCReading2: "إعادة تصميم واجهة المستخدم",
+        aboutCBuilding: "الصناعة",
+        aboutCBuilding2: "نظام حجز في كاي كافي",
+        aboutCLearning: "التعلم",
+        aboutCLearning2: "Back-end",
+        aboutCDrinking: "المشروب",
+        aboutCDrinking2: "شاي",
+        // about rest of the table
+        aboutProjects: "المشاريع",
+        aboutCoding: "البرمجة",
+        aboutCodingYears: "سنوات",
+        aboutCertifications: "الشهادات",
+        aboutDrink: "شاي / يوم",
+        aboutOpenTo: "منفتح لـ",
+        aboutOpenTo2: "التدريب الداخلي، والعمل الحر في مجال تطوير واجهات المستخدم، والتعاونات القصيرة.",
 
         // Certifications Section
         certTitle: "الرخص والشهادات",

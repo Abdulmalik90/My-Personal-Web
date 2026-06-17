@@ -11,17 +11,17 @@ export default function About() {
     const { t } = useLanguage();
 
     const stats = [
-        { k: '12+', l: 'Projects' },
-        { k: '3 yrs', l: 'Coding' },
-        { k: '04', l: 'Certifications' },
-        { k: '∞', l: 'Coffee/day' },
+        { k: '12+', l: t("aboutProjects") },
+        { k: '3 '+ t("aboutCodingYears"), l: t("aboutCoding") },
+        { k: '04', l: t("aboutCertifications")},
+        { k: '∞', l: t("aboutDrink") },
     ];
 
     const currently = [
-        { label: 'READING',  value: 'Refactoring UI' },
-        { label: 'BUILDING', value: 'A booking flow for Cay Cafe' },
-        { label: 'LEARNING', value: 'Server components, properly' },
-        { label: 'DRINKING', value: 'Cardamom coffee' },
+        { label: t("aboutCReading"),  value: t("aboutCReading2") },
+        { label: t("aboutCBuilding"), value: t("aboutCBuilding2") },
+        { label: t("aboutCLearning"), value: t("aboutCLearning2") },
+        { label: t("aboutCDrinking"), value: t("aboutCDrinking2") },
     ];
 
     return (
@@ -45,18 +45,17 @@ export default function About() {
                     <div className="ab-rule-line" />
                     <div className="ab-rule-meta">
                         <span style={{ color: VIOLET, marginRight: 6, animation: 'fsHBlink 1.5s infinite', display: 'inline-block' }}>•</span>
-                        Dammam · CS '26
+                        {t("aboutHeader")}
                     </div>
                 </div>
 
                 <div className="ab-title-row">
-                    <h2 className="ab-heading">
-                        A bit<br />about{' '}
-                        <em style={{ fontWeight: 400, fontStyle: 'italic', color: VIOLET }}>me</em>
-                    </h2>
+                    <h5 className="ab-heading">
+                        {t("aboutTitle1")}<br />{t("aboutTitle2")}{' '}
+                        <em style={{ fontWeight: 400, fontStyle: 'italic', color: VIOLET }}>{t("aboutTitle3")}</em>
+                    </h5>
                     <p className="ab-subtitle">
-                        Computer Science student by day, builder by night. Front-end focused,
-                        with a soft spot for human-computer interaction and quietly intuitive interfaces.
+                        {t("about0")}
                     </p>
                 </div>
             </div>
@@ -67,7 +66,7 @@ export default function About() {
                 <div className="ab-article">
                     {/* Drop-cap paragraph */}
                     <p className="ab-dropcap-p">
-                        <span className="ab-dropcap">I</span>
+                        <span className="ab-dropcap">{t("abouti")}</span>
                         {t('about2').replace(/^I/, '')}
                     </p>
 
@@ -89,10 +88,10 @@ export default function About() {
                     {/* Currently panel */}
                     <div className="ab-panel">
                         <div className="ab-panel-header">
-                            <span style={{ fontFamily: MONO, fontSize: 11, color: VIOLET, fontWeight: 600, letterSpacing: '0.2em' }}>CURRENTLY</span>
+                            <span style={{ fontFamily: MONO, fontSize: 11, color: VIOLET, fontWeight: 600, letterSpacing: '0.2em' }}>{t("aboutCTitle")}</span>
                             <span style={{ display: 'flex', alignItems: 'center', gap: 6, fontFamily: MONO, fontSize: 11, color: DIM }}>
                                 <span className="ab-live-dot" />
-                                live
+                                {t("aboutClive")}
                             </span>
                         </div>
                         <ul className="ab-currently-list">
@@ -117,9 +116,9 @@ export default function About() {
 
                     {/* Open to panel */}
                     <div className="ab-opento-panel">
-                        <div style={{ fontFamily: MONO, fontSize: 11, color: VIOLET, fontWeight: 600, letterSpacing: '0.2em', marginBottom: 8 }}>OPEN TO</div>
+                        <div style={{ fontFamily: MONO, fontSize: 11, color: VIOLET, fontWeight: 600, letterSpacing: '0.2em', marginBottom: 8 }}>{t("aboutOpenTo")}</div>
                         <div style={{ fontSize: 15, color: '#e2e8f0', lineHeight: 1.5 }}>
-                            Internships, freelance front-end work, and short collaborations.
+                            {t("aboutOpenTo2")}
                         </div>
                     </div>
                 </aside>

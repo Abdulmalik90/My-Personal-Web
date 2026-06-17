@@ -97,10 +97,20 @@ export const translation = {
         // 5. Command Line 102
         cert5Title: "Command Line 102",
         cert5SubTitle: "This course about the commands those help to know more details of types of commands and how they work.",
+        // 6. Command Line 103
+        cert6Title: "Command Line 103",
+        cert6SubTitle: "In this course, I learned the commands that help us perform input/output redirection, using the specific parameters for each input/output redirection operation.",
+        // ==================================
         closeDialog: "close",
         viewAllCerts: "View All Certifications",
+        
 
         // All Certification Page
+        allFields: "All Fields",
+        allCertsSubtitle: "Verified training across AI, design, and software fundamentals. Filter by field to see what is relevant to you.",
+        filterByField: "Filter By Field",
+        clearFilters: "Clear Filter",
+        //Filter fields
         "AI": "Artificial Intelligence",
         "Design": "UX & UI Design",
         "Web Development": "Web Development",
@@ -209,10 +219,18 @@ export const translation = {
         // 5. Comman Line 102
         cert5Title: "موجه الأوامر 102",
         cert5SubTitle: "تتحدث هذه الدورة على الأوامر التي تساعد في معرفة تفاصيل أكثر عن الأنواع المختلفة للأوامر وكيفية عملها.",
+        // 6. Command Line 103
+        cert6Title: "موجه الأوامر 103",
+        cert6SubTitle: "تعلمت في هذه الدورة الأوامر التي تساعدنا في عمل إعادة توجية للمدخلات والمخرجات Input/Output Redirection. وذلك باستخدام المعاملات الخاصة لكل عملية من عمليات إعادة توجيه المدخلات والمخرجات.",
         closeDialog: "إغلاق",
         viewAllCerts: "عرض جميع الشهادات",
 
         // All Certification Page
+        allFields: "كل المجالات",
+        allCertsSubtitle: "تدريب معتمد في مجالات الذكاء الاصطناعي والتصميم وأساسيات البرمجيات. يمكنك تصفية النتائج حسب المجال لمعرفة ما يناسبك.",
+        filterByField: "تصفية حسب المجال",
+        clearFilters: "الغاء التصفية",
+        //Filter fields
         "AI": "الذكاء الاصطناعي",
         "Design": "تصميم واجهة وتجربة المستخدم",
         "Web Development": "تطوير الويب",

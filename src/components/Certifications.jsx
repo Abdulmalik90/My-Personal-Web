@@ -1,4 +1,4 @@
-import { useLanguage } from "./LanguageContext";
+import { useLanguage } from "./LanguageContext"
 import CertCard from "./CertCard";
 import { cert } from "../data/certificationsData";
 import CertDialog from "./CertDialog";

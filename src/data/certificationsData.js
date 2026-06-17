@@ -31,4 +31,10 @@ export const cert = [
         techTags:["OS", "Windows", "Computer Science"],
         mainTopic: "Operating Systems",
     },
+    {
+        id:6, 
+        photoPath:"/certifications_Imgs/Command-line 103.png",
+        techTags:["OS", "Windows", "Computer Science"],
+        mainTopic: "Operating Systems",
+    },
 ]

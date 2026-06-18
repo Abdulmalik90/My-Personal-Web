@@ -62,6 +62,17 @@ export default function Hero() {
                 {t("heroBtn2")}
             </button>
             </div>
+
+            {/* download button */}
+            <a 
+                href="/files/AbdulmalikAlkhalifh - Front End.pdf" 
+                download="Your_Name_CV.pdf" 
+                id="download-btn"
+                style={{ textDecoration: 'none', marginTop: "15px", maxWidth: "380px" }} // Add your button classes here
+            >
+                <span className="material-symbols-outlined">download</span>
+                <p>{t("cvDownload")}</p>
+            </a>
         </div>
 
         <div className="hero-right">

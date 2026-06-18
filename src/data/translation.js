@@ -116,6 +116,12 @@ export const translation = {
         "Web Development": "Web Development",
         "Operating Systems": "Operating Systems",
 
+        // Projects page
+        allProjectsSubtitle: "A selection of products and prototypes — built solo, with classmates, or against tight deadlines. Filter by what they are made of.",
+        allLanguages: "All Languages",
+        viewProject: "View Project",
+        filterByLanguage: "Filter By Language",
+
         // Footer
         footerTitle: "Ready to build somthing great?",
         footerSubTitle: "Let's connect.",
@@ -235,6 +241,12 @@ export const translation = {
         "Design": "تصميم واجهة وتجربة المستخدم",
         "Web Development": "تطوير الويب",
         "Operating Systems": "أنظمة التشغيل",
+
+        // Projects page
+        allProjectsSubtitle: "مجموعة مختارة من المنتجات والنماذج الأولية - تم بناؤها بشكل فردي، أو مع زملاء الدراسة، أو في ظل مواعيد نهائية ضيقة. قم بتصفية النتائج حسب المواد المصنوعة منها.",
+        allLanguages: "كل التقنيات",
+        viewProject: "عرض المشروع",
+        filterByLanguage: "تصفية حسب التقنية",
 
         // Footer
         footerTitle: "هل أنت مستعد لبناء شيء رائع؟",

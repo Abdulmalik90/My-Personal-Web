@@ -50,7 +50,6 @@ export default function Skills() {
                 <button className="skill-btn">APIs</button>
                 <button className="skill-btn">Java</button>
                 <button className="skill-btn">Python</button>
-                <button className="skill-btn">Vibe Engineering</button>
             </div>
         </section>
     );

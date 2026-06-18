@@ -42,10 +42,15 @@ export default function Nav(){
                 <Link to="/Home#about" onClick={() => setIsMenuOpen(false)}>{t("about")}</Link>
 
                 {/* download button */}
-                <button id="download-btn">
+                <a 
+                    href="/files/AbdulmalikAlkhalifh - Front End.pdf" 
+                    download="Your_Name_CV.pdf" 
+                    id="download-btn"
+                    style={{ textDecoration: 'none' }} // Add your button classes here
+                >
                     <span className="material-symbols-outlined">download</span>
                     <p>{t("cvDownload")}</p>
-                </button>
+                </a>
 
                 {/* change language button */}
                 <button id="language-btn" onClick={toggleLanguage}>

@@ -1,0 +1,455 @@
+/* ============================================================
+   ALL PROJECTS PAGE
+   Live GitHub-fetched repo grid with language filter sidebar.
+   Languages are data-driven (built from repo.language), not hardcoded.
+   ============================================================ */
+
+.pgp-page {
+    padding: 100px 0 70px;
+}
+
+.pgp-page .fs-header-inner {
+    margin-bottom: 10px;
+}
+
+/* ── Loading / error states ── */
+.pgp-state {
+    width: 90%;
+    max-width: 1240px;
+    margin: 40px auto;
+    text-align: center;
+    color: var(--text);
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+    font-size: 0.9rem;
+}
+
+.pgp-state-error {
+    color: #fb7185;
+}
+
+/* ── Body: sidebar + grid ── */
+.pgp-body {
+    width: 90%;
+    max-width: 1600px;
+    margin: 10px auto 0;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .pgp-body {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Sidebar ── */
+.pgp-sidebar {
+    position: sticky;
+    top: 24px;
+    background-color: var(--card);
+    border: 1px solid var(--other-buttons-border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .pgp-sidebar {
+        position: static;
+    }
+}
+
+.pgp-sidebar-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 18px 18px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.pgp-sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.pgp-clear-btn {
+    background: none;
+    border: none;
+    color: var(--secondary);
+    font-size: 0.78rem;
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+}
+
+.pgp-sidebar-list {
+    padding: 10px 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+.pgp-sidebar-foot {
+    padding: 14px 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+    font-size: 0.78rem;
+    color: var(--text-lighter);
+    line-height: 1.6;
+}
+
+.pgp-foot-count {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+/* ── Language checkbox ── */
+.pgp-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.pgp-checkbox:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.pgp-checkbox.is-checked,
+.pgp-checkbox.is-checked:hover {
+    background: color-mix(in srgb, var(--field-color) 14%, transparent);
+    border-color: color-mix(in srgb, var(--field-color) 45%, transparent);
+}
+
+.pgp-checkbox-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    transition: all 0.2s;
+}
+
+.pgp-checkbox.is-checked .pgp-checkbox-box {
+    background: var(--field-color);
+    border-color: var(--field-color);
+}
+
+.pgp-checkbox-label {
+    flex: 1;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+.pgp-checkbox.is-checked .pgp-checkbox-label {
+    color: #fff;
+}
+
+.pgp-checkbox-count {
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: right;
+    color: var(--text-lighter);
+}
+
+.pgp-checkbox.is-checked .pgp-checkbox-count {
+    color: var(--field-color);
+}
+
+.pgp-checkbox-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* ── Active filter chips ── */
+.pgp-chips-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    min-height: 34px;
+    margin-bottom: 22px;
+}
+
+.pgp-chip-placeholder {
+    font-size: 0.8rem;
+    color: var(--text-lighter);
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+}
+
+.pgp-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 6px 8px 6px 12px;
+    border-radius: 99px;
+    background: color-mix(in srgb, var(--chip-color) 18%, transparent);
+    color: var(--chip-color);
+    border: 1px solid color-mix(in srgb, var(--chip-color) 40%, transparent);
+}
+
+.pgp-chip button {
+    background: none;
+    border: none;
+    color: var(--chip-color);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    padding: 0;
+}
+
+/* ── Results grid ── */
+.pgp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 22px;
+}
+
+/* ── Empty state ── */
+.pgp-empty {
+    padding: 80px 20px;
+    text-align: center;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    color: var(--text-lighter);
+}
+
+.pgp-empty-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 6px;
+}
+
+.pgp-empty-sub {
+    font-size: 0.875rem;
+}
+
+/* ── Card ── */
+.pgp-card {
+    background-color: var(--card);
+    border: 1px solid var(--other-buttons-border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+                border-color 0.35s, box-shadow 0.35s;
+    animation: pgpCardIn 0.5s both;
+}
+
+.pgp-card:hover,
+.pgp-card:focus-visible {
+    transform: translateY(-6px);
+    border-color: var(--secondary);
+    box-shadow: 0 22px 46px -22px var(--secondary);
+}
+
+.pgp-card:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+@keyframes pgpCardIn {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: none; }
+}
+
+.pgp-card-thumb {
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+    background-color: #0b1114;
+}
+
+.pgp-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.4s ease;
+}
+
+.pgp-card:hover .pgp-card-thumb img {
+    transform: scale(1.04);
+    filter: brightness(0.6);
+}
+
+.pgp-card-placeholder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg,
+        color-mix(in srgb, var(--topic-color) 18%, transparent),
+        color-mix(in srgb, var(--topic-color) 4%, transparent));
+    color: color-mix(in srgb, var(--topic-color) 60%, transparent);
+}
+
+.pgp-card-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.6);
+}
+
+.pgp-card:hover .pgp-card-view,
+.pgp-card:focus-visible .pgp-card-view {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.pgp-card-no {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+    font-size: 0.68rem;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    padding: 4px 9px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pgp-card-fade {
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 -50px 50px -30px rgba(6, 16, 26, 0.9);
+    pointer-events: none;
+}
+
+.pgp-card-body {
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.pgp-card-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.pgp-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.25;
+    color: var(--text);
+    text-transform: capitalize;
+    word-break: break-word;
+}
+
+.pgp-card-git {
+    position: relative;
+    z-index: 2;
+    color: var(--text-lighter);
+    display: flex;
+    padding: 5px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+
+.pgp-card-git:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+}
+
+.pgp-card-desc {
+    font-size: 0.85rem;
+    color: var(--text-lighter);
+    line-height: 1.6;
+    margin: 0 0 18px;
+    flex: 1;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.pgp-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pgp-lang-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
+    font-weight: 600;
+    padding: 5px 11px;
+    border-radius: 99px;
+    background: color-mix(in srgb, var(--topic-color) 14%, transparent);
+    color: var(--topic-color);
+    border: 1px solid color-mix(in srgb, var(--topic-color) 33%, transparent);
+}
+
+.pgp-lang-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--topic-color);
+}
+
+.pgp-tech-pill {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 5px 11px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-lighter);
+    border: 1px solid var(--other-buttons-border);
+}
+
+/* ── RTL: flip directional icons ── */
+html:lang(ar) .pgp-sidebar-title svg {
+    transform: scaleX(-1);
+}

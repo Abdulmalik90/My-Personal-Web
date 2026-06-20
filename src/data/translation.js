@@ -84,22 +84,108 @@ export const translation = {
         
         // 1. Google Certificate
         cert1Title: "Google AI Skills",
-        cert1SubTitle: "The course focuses on introducing learners to artificial intelligence concepts and practical skills, helping participants understand how AI works and how it can be applied in real-world scenarios.",
+        cert1SubTitle: "Introduces core artificial intelligence concepts and practical skills, focusing on how AI works and its application in real-world scenarios.",
+
         // 2. UX-UI Certificate
         cert2Title: "UX & UI Design",
         cert2SubTitle: "Advanced training in user-centric design principles, wireframing, and creating highly intuitive user interfaces.",
+
         // 3. OOP / Advanced Programming
         cert3Title: "Object-Oriented Programming",
         cert3SubTitle: "Deep dive into core computer science concepts, class structures, inheritance, and scalable software architecture.",
+
         // 4. Command Line 101
         cert4Title: "Command Line 101",
-        cert4SubTitle: "The course focuses on the introductoin of the command line",
+        cert4SubTitle: "Fundamental introduction to navigating and utilizing the command line interface.",
+
         // 5. Command Line 102
         cert5Title: "Command Line 102",
-        cert5SubTitle: "This course about the commands those help to know more details of types of commands and how they work.",
+        cert5SubTitle: "Explores various command-line utilities in detail, focusing on their specific functions and how they operate.",
+
         // 6. Command Line 103
         cert6Title: "Command Line 103",
-        cert6SubTitle: "In this course, I learned the commands that help us perform input/output redirection, using the specific parameters for each input/output redirection operation.",
+        cert6SubTitle: "Covers input/output (I/O) redirection commands and the use of specific parameters for advanced file operations.",
+
+        // 7. Introduction to CSS
+        cert7Title: "Introduction to CSS",
+        cert7SubTitle: "Covers the fundamental concepts and styling techniques of CSS for web design.",
+
+        // 8. Introduction to HTML
+        cert8Title: "Introduction to HTML",
+        cert8SubTitle: "Covers the fundamental concepts of building and structuring web pages using HTML.",
+
+        // 9. Introduction to Programming
+        cert9Title: "Introduction to Programming",
+        cert9SubTitle: "An introduction to foundational programming concepts and logic, independent of any specific programming language.",
+
+        // 10. Java 101
+        cert10Title: "Java 101",
+        cert10SubTitle: "Covers the fundamentals of the Java programming language, its core features, and basic syntax.",
+
+        // 11. Java 102
+        cert11Title: "Java 102",
+        cert11SubTitle: "Focuses on applying arrays, functions, loops, and exception handling in Java.",
+
+        // 12. Java 103
+        cert12Title: "Java 103",
+        cert12SubTitle: "Explores core Object-Oriented Programming (OOP) concepts and their practical application in Java.",
+
+        // 13. Java 104
+        cert13Title: "Java 104",
+        cert13SubTitle: "A practical application of Java and OOP concepts through the development of a comprehensive software project.",
+
+        // 14. JavaScript 101
+        cert14Title: "JavaScript 101",
+        cert14SubTitle: "Covers JavaScript fundamentals, including variables, arrays, conditional logic, loops, and functions.",
+
+        // 15. JavaScript 102
+        cert15Title: "JavaScript 102",
+        cert15SubTitle: "Advanced JavaScript concepts, including date and number manipulation, callbacks, advanced array handling, and Object-Oriented Programming.",
+
+        // 16. Network Programming 101
+        cert16Title: "Network Programming 101",
+        cert16SubTitle: "Introduces basic networking concepts, data transmission fundamentals, prominent network protocols, and core network programming principles.",
+
+        // 17. Network Programming 102
+        cert17Title: "Network Programming 102",
+        cert17SubTitle: "Explores advanced network programming concepts, including an in-depth look at the OSI model and its network layers.",
+
+        // 18. Introduction to OOP
+        cert18Title: "Introduction to Object-Oriented Programming (OOP)",
+        cert18SubTitle: "An essential guide to Object-Oriented Programming (OOP) paradigms and their importance in software engineering.",
+
+        // 19. PHP Basics 101
+        cert19Title: "PHP Basics 101",
+        cert19SubTitle: "Covers foundational programming concepts in PHP, including variables, constants, conditionals, and loops.",
+
+        // 20. PHP Functions 102
+        cert20Title: "PHP Functions 102",
+        cert20SubTitle: "Focuses on creating, managing, and utilizing different types of functions within the PHP language.",
+
+        // 21. PHP Array 103
+        cert21Title: "PHP Array 103",
+        cert21SubTitle: "An in-depth look at arrays in PHP, covering array types, definitions, and built-in array manipulation functions.",
+
+        // 22. Python 101
+        cert22Title: "Python 101",
+        cert22SubTitle: "Covers Python fundamentals, from environment setup and data types to basic operations, conditionals, loops, and functions.",
+
+        // 23. SQL 101
+        cert23Title: "SQL 101",
+        cert23SubTitle: "Introduces relational database management using SQL, covering data storage, retrieval, modification, and deletion (CRUD operations).",
+
+        // 24. SQL 102
+        cert24Title: "SQL 102",
+        cert24SubTitle: "Advanced data manipulation in SQL, focusing on table operations and the use of Aggregate and Scalar functions.",
+
+        // 25. SQL 103
+        cert25Title: "SQL 103",
+        cert25SubTitle: "Covers advanced SQL architecture, including database relations, indexing, and stored procedures.",
+
+        // 26. Introduction to DOM
+        cert26Title: "Introduction to DOM",
+        cert26SubTitle: "Explores how to access, manipulate, and dynamically update HTML elements using the Document Object Model (DOM).",
+        
         // ==================================
         closeDialog: "close",
         viewAllCerts: "View All Certifications",
@@ -211,25 +297,108 @@ export const translation = {
         showCert: "عرض الشهادة",
         
         // 1. Google Certificate
-        cert1Title: "مهارات Google الذكاء الإصطناعي",
-        cert1SubTitle: "شهادة شاملة تركز هذه الدورة على تعريف المتعلمين بمفاهيم الذكاء الاصطناعي والمهارات العملية، ومساعدة المشاركين على فهم كيفية عمل الذكاء الاصطناعي وكيف يمكن تطبيقه في سيناريوهات العالم الحقيقي.",   
+        cert1Title: "مهارات الذكاء الاصطناعي من جوجل",
+        cert1SubTitle: "يركز هذا المسار على تقديم مفاهيم الذكاء الاصطناعي والمهارات العملية، مما يساعد على فهم كيفية عمل الذكاء الاصطناعي وتطبيقاته في سيناريوهات العالم الحقيقي.",
+
         // 2. UX-UI Certificate
-        cert2Title: "تصميم تجربة وواجهة المستخدم (UX/UI)",
-        cert2SubTitle: "تدريب متقدم على مبادئ التصميم المتمحور حول المستخدم، التخطيط الهيكلي، وإنشاء واجهات استخدام بديهية.",
+        cert2Title: "تصميم واجهة وتجربة المستخدم (UX & UI)",
+        cert2SubTitle: "تدريب متقدم على مبادئ التصميم المتمحور حول المستخدم، وتخطيط الهيكلية (Wireframing)، وإنشاء واجهات مستخدم تفاعلية وسهلة الاستخدام.",
+
         // 3. OOP / Advanced Programming
         cert3Title: "البرمجة كائنية التوجه (OOP)",
-        cert3SubTitle: "دراسة متعمقة لمفاهيم علوم الحاسب الأساسية، هيكلة الفئات، الوراثة، وبناء برمجيات قابلة للتوسع.",
-        // 4. Comman Line 101
-        cert4Title: "موجه الأوامر 101",
-        cert4SubTitle: "دورة أساسيات موجه الأوامر في الويندوز",
-        // 5. Comman Line 102
-        cert5Title: "موجه الأوامر 102",
-        cert5SubTitle: "تتحدث هذه الدورة على الأوامر التي تساعد في معرفة تفاصيل أكثر عن الأنواع المختلفة للأوامر وكيفية عملها.",
+        cert3SubTitle: "تعمق في المفاهيم الأساسية لعلوم الحاسب، وهياكل الفئات (Classes)، والوراثة (Inheritance)، وهيكلة البرمجيات القابلة للتوسع.",
+
+        // 4. Command Line 101
+        cert4Title: "سطر الأوامر 101",
+        cert4SubTitle: "مقدمة أساسية للتعامل مع سطر الأوامر (Command Line).",
+
+        // 5. Command Line 102
+        cert5Title: "سطر الأوامر 102",
+        cert5SubTitle: "يستعرض هذا المسار تفاصيل أنواع الأوامر المختلفة وكيفية عملها واستخداماتها المتقدمة.",
+
         // 6. Command Line 103
-        cert6Title: "موجه الأوامر 103",
-        cert6SubTitle: "تعلمت في هذه الدورة الأوامر التي تساعدنا في عمل إعادة توجية للمدخلات والمخرجات Input/Output Redirection. وذلك باستخدام المعاملات الخاصة لكل عملية من عمليات إعادة توجيه المدخلات والمخرجات.",
-        closeDialog: "إغلاق",
-        viewAllCerts: "عرض جميع الشهادات",
+        cert6Title: "سطر الأوامر 103",
+        cert6SubTitle: "تغطية لأوامر إعادة توجيه الإدخال والإخراج (I/O Redirection) واستخدام المعلمات الخاصة بكل عملية.",
+
+        // 7. Introduction to CSS
+        cert7Title: "مقدمة في CSS",
+        cert7SubTitle: "يغطي المفاهيم الأساسية لتنسيق وتصميم صفحات الويب باستخدام لغة CSS.",
+
+        // 8. Introduction to HTML
+        cert8Title: "مقدمة في HTML",
+        cert8SubTitle: "يغطي المفاهيم الأساسية لبناء وهيكلة صفحات الويب باستخدام لغة HTML.",
+
+        // 9. Introduction to Programming
+        cert9Title: "مقدمة في البرمجة",
+        cert9SubTitle: "مدخل للمفاهيم الأساسية للبرمجة بشكل عام دون التعمق في لغة برمجية معينة.",
+
+        // 10. Java 101
+        cert10Title: "جافا 101",
+        cert10SubTitle: "تغطية لأساسيات لغة جافا (Java)، ومميزاتها، وكيفية استخدامها في كتابة الأكواد.",
+
+        // 11. Java 102
+        cert11Title: "جافا 102",
+        cert11SubTitle: "تطبيق المصفوفات (Arrays) والدوال (Functions)، وكيفية التعامل مع الحلقات (Loops) والاستثناءات في لغة جافا.",
+
+        // 12. Java 103
+        cert12Title: "جافا 103",
+        cert12SubTitle: "استعراض مفاهيم البرمجة كائنية التوجه (OOP) وكيفية تطبيقها بشكل عملي في لغة جافا.",
+
+        // 13. Java 104
+        cert13Title: "جافا 104",
+        cert13SubTitle: "تطبيق المفاهيم المكتسبة في دورات جافا السابقة لبناء مشروع برمجي متكامل.",
+
+        // 14. JavaScript 101
+        cert14Title: "جافاسكريبت 101",
+        cert14SubTitle: "أساسيات لغة جافاسكريبت، بما في ذلك المتغيرات، والثوابت، والمصفوفات، والجمل الشرطية، والحلقات، والدوال.",
+
+        // 15. JavaScript 102
+        cert15Title: "جافاسكريبت 102",
+        cert15SubTitle: "مفاهيم متقدمة لبناء برامج ذات قدرات أعلى، مثل التعامل مع الأرقام والتواريخ، استخدام (Callbacks)، وتطبيق مفاهيم البرمجة كائنية التوجه في جافاسكريبت.",
+
+        // 16. Network Programming 101
+        cert16Title: "برمجة الشبكات 101",
+        cert16SubTitle: "مقدمة للمفاهيم الأساسية في مجال الشبكات، كيفية نقل البيانات، وأبرز البروتوكولات المستخدمة في برمجة الشبكات.",
+
+        // 17. Network Programming 102
+        cert17Title: "برمجة الشبكات 102",
+        cert17SubTitle: "استكشاف أعمق لمفاهيم برمجة الشبكات، وطبقات الشبكة في نموذج (OSI)، وغيرها من المفاهيم المتقدمة.",
+
+        // 18. Introduction to OOP
+        cert18Title: "مقدمة في البرمجة كائنية التوجه (OOP)",
+        cert18SubTitle: "التعرف على أهم مفاهيم البرمجة كائنية التوجه وأهميتها في عالم هندسة البرمجيات بشكل عام.",
+
+        // 19. PHP Basics 101
+        cert19Title: "أساسيات PHP 101",
+        cert19SubTitle: "أساسيات البرمجة بلغة PHP، تشمل المتغيرات، والثوابت، والشروط، والحلقات، والمفاهيم الأساسية الأخرى.",
+
+        // 20. PHP Functions 102
+        cert20Title: "دوال PHP 102",
+        cert20SubTitle: "تغطية شاملة لكيفية إنشاء واستخدام الدوال (Functions) وأنواعها في لغة PHP.",
+
+        // 21. PHP Array 103
+        cert21Title: "مصفوفات PHP 103",
+        cert21SubTitle: "التعرف على أساسيات المصفوفات (Arrays) في لغة PHP، أنواعها، كيفية تعريفها، والدوال المرتبطة بها.",
+
+        // 22. Python 101
+        cert22Title: "بايثون 101",
+        cert22SubTitle: "أساسيات لغة بايثون، بدءاً من إعداد بيئة العمل، وصولاً إلى التعامل مع أنواع البيانات المختلفة، الجمل الشرطية، والحلقات، والدوال.",
+
+        // 23. SQL 101
+        cert23Title: "قواعد البيانات SQL 101",
+        cert23SubTitle: "أساسيات التعامل مع قواعد البيانات وإدارتها باستخدام SQL، بما في ذلك تخزين البيانات، عرضها، تعديلها، وحذفها.",
+
+        // 24. SQL 102
+        cert24Title: "قواعد البيانات SQL 102",
+        cert24SubTitle: "التعامل المتقدم مع البيانات في الجداول وتنفيذ العمليات باستخدام دوال مختلفة مثل (Aggregate) و (Scalar).",
+
+        // 25. SQL 103
+        cert25Title: "قواعد البيانات SQL 103",
+        cert25SubTitle: "تغطية للمفاهيم المتقدمة في SQL مثل العلاقات (Relations)، الفهارس (Indexes)، والإجراءات المخزنة (Procedures).",
+
+        // 26. Introduction to DOM
+        cert26Title: "مقدمة في DOM",
+        cert26SubTitle: "تعلم كيفية الوصول إلى عناصر HTML ومعالجتها باستخدام نموذج كائن المستند (DOM) لتطوير واجهات تفاعلية.",
 
         // All Certification Page
         allFields: "كل المجالات",

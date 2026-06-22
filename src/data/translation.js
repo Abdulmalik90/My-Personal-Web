@@ -185,7 +185,7 @@ export const translation = {
         // 26. Introduction to DOM
         cert26Title: "Introduction to DOM",
         cert26SubTitle: "Explores how to access, manipulate, and dynamically update HTML elements using the Document Object Model (DOM).",
-        
+
         // ==================================
         closeDialog: "close",
         viewAllCerts: "View All Certifications",
@@ -196,6 +196,9 @@ export const translation = {
         allCertsSubtitle: "Verified training across AI, design, and software fundamentals. Filter by field to see what is relevant to you.",
         filterByField: "Filter By Field",
         clearFilters: "Clear Filter",
+        showingResults: "showing results:",
+        filterWord: "filter word",
+        filtersWord: "filters word",
         //Filter fields
         "AI": "Artificial Intelligence",
         "Design": "UX & UI Design",
@@ -399,17 +402,24 @@ export const translation = {
         // 26. Introduction to DOM
         cert26Title: "مقدمة في DOM",
         cert26SubTitle: "تعلم كيفية الوصول إلى عناصر HTML ومعالجتها باستخدام نموذج كائن المستند (DOM) لتطوير واجهات تفاعلية.",
+        viewAllCerts: "عرض كل الشهادات",
 
         // All Certification Page
         allFields: "كل المجالات",
         allCertsSubtitle: "تدريب معتمد في مجالات الذكاء الاصطناعي والتصميم وأساسيات البرمجيات. يمكنك تصفية النتائج حسب المجال لمعرفة ما يناسبك.",
         filterByField: "تصفية حسب المجال",
         clearFilters: "الغاء التصفية",
+        showingResults: "النتائج الظاهره:",
+        filterWord: "تصفية الكلمة",
+        filtersWord: "تصفيات الكلمة",
         //Filter fields
         "AI": "الذكاء الاصطناعي",
         "Design": "تصميم واجهة وتجربة المستخدم",
         "Web Development": "تطوير الويب",
         "Operating Systems": "أنظمة التشغيل",
+        "Computer Science": "علوم الحاسب",
+        "Software Engineering": "هندسة برمجيات",
+        "Networking": "شبكات",
 
         // Projects page
         allProjectsSubtitle: "مجموعة مختارة من المنتجات والنماذج الأولية - تم بناؤها بشكل فردي، أو مع زملاء الدراسة، أو في ظل مواعيد نهائية ضيقة. قم بتصفية النتائج حسب المواد المصنوعة منها.",

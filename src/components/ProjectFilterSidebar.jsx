@@ -75,6 +75,7 @@ export default function ProjectFilterSidebar({
             <div className="pgp-sidebar-foot">
                 {t("showingResults") || "Showing"}{" "}
                 <span className="pgp-foot-count">{filteredCount}</span> / {total}
+                <br/>
                 {active.length > 0 && (
                     <span>
                         {" "}· {active.length}{" "}

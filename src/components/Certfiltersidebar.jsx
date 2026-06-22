@@ -51,6 +51,7 @@ export default function CertFilterSidebar({ topics, active, onToggle, onClear, t
 
             <div className="acp-sidebar-foot">
                 {t("showingResults") || "Showing"} <span className="acp-foot-count">{filteredCount}</span> / {total}
+                <br />
                 {active.length > 0 && (
                     <span>
                         {" "}

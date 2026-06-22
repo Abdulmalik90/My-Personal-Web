@@ -4,7 +4,7 @@ import CertDialog from "../CertDialog";
 import AllCertCard from "../AllCertCard"; //TEMP1
 import CertFilterSidebar from "../CertFilterSidebar";   //TEMP2
 import { cert } from "../../data/certificationsData";
-import "../../styles/allCertsPage.css";
+import "../../styles/allCertsPage.css"; //temp.css
 
 // Rotating accent palette assigned to whatever topics actually exist in
 // certificationsData.js (in the order they first appear). Add a new

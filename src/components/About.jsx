@@ -13,7 +13,7 @@ export default function About() {
     const stats = [
         { k: '12+', l: t("aboutProjects") },
         { k: '3 '+ t("aboutCodingYears"), l: t("aboutCoding") },
-        { k: '04', l: t("aboutCertifications")},
+        { k: '26', l: t("aboutCertifications")},
         { k: '∞', l: t("aboutDrink") },
     ];
 

@@ -5,7 +5,7 @@ const ThemeContext = createContext();
 export function ThemeProvider({ children }) {
     // 1. Check local storage for theme, default to "light"
     const [theme, setTheme] = useState(() => {
-        return localStorage.getItem("theme") || "light";
+        return localStorage.getItem("theme") || "dark";
     });
 
     // 2. Update the HTML data-theme attribute and save to storage

@@ -14,9 +14,39 @@
     max-width: 600px;
 }
 
-@media (max-width: 900px) {
-    .hero-left #download-btn {
+#hero-inner-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+#hero-buttons-container #download-btn {
+    width: 80%;
+    margin-top: 5px !important;
+}
+
+
+
+@media (max-width: 923px) {
+    #hero-buttons-container {
+        gap: 2px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    #hero-inner-buttons-container {
+        flex-direction: column;
+    }
+
+    #hero-inner-buttons-container button {
         width: 100%;
+    }
+
+    #download-btn {
+        width:95% !important;
     }
 }
 
@@ -77,8 +107,10 @@ code {
 /* Button Styling Updates */
 #hero-buttons-container {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
     gap: 20px;
-    justify-content: flex-start; /* Aligned left now */
+    justify-content: center; /* Aligned left now */
 }
 
 #hero-buttons-container button {
@@ -197,7 +229,10 @@ code {
     }
 
     #hero-buttons-container {
-        justify-content: center;
+        display: flex;
+        justify-content: center; /* This works for both LTR and RTL */
+        flex-wrap: wrap;         /* Allows buttons to stack if the screen is small */
+        gap: 15px;               /* Adds spacing between buttons without using margins */
         width: 100%;
     }
 
@@ -215,15 +250,15 @@ code {
         gap: 15px;
     }
 
-    #hero-buttons-container a {
-        width: 100%;
-    }
+    
 
     #view-btn, 
     #contact-btn {
         width: 100%;
         justify-content: center;
     }
+
+    
 
     .window-body {
         overflow-x: auto; /* Adds a scrollbar if the code is wider than the phone */

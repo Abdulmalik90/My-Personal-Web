@@ -52,33 +52,37 @@ export default function Hero() {
             <p className="hero-description">{t("heroSubTitle")}</p>
 
             <div id="hero-buttons-container">
-            <Link to="/projects" style={{ textDecoration: "none" }}>
-                <button id="view-btn" className="glow-effect">
-                {t("heroBtn1")}
-                <span style={{ marginLeft: "6px", marginRight: "8px" }} className="material-symbols-outlined">
-                    {isArabic ? "arrow_back" : "arrow_forward"}
-                </span>
-                </button>
-            </Link>
+                <div id="hero-inner-buttons-container">
+                    <Link to="/projects" style={{ textDecoration: "none" }}>
+                        <button id="view-btn" className="glow-effect">
+                        {t("heroBtn1")}
+                        <span style={{ marginLeft: "6px", marginRight: "8px" }} className="material-symbols-outlined">
+                            {isArabic ? "arrow_back" : "arrow_forward"}
+                        </span>
+                        </button>
+                    </Link>
 
-            <a style={{textDecoration: "none"}} href="mailto:contact@abdulmalik.dev"><button id="contact-btn" onClick={handleCopyEmail}>
-                <span style={{ marginRight: "6px", marginLeft: "6px" }} className="material-symbols-outlined">
-                mail
-                </span>
-                {t("heroBtn2")}
-            </button></a>
+                    <a style={{textDecoration: "none"}} href="mailto:contact@abdulmalik.dev"><button id="contact-btn" onClick={handleCopyEmail}>
+                        <span style={{ marginRight: "6px", marginLeft: "6px" }} className="material-symbols-outlined">
+                        mail
+                        </span>
+                        {t("heroBtn2")}
+                    </button></a>
+                </div>
+
+                {/* download button */}
+                <a 
+                    href="/files/AbdulmalikAlkhalifh - Front End.pdf" 
+                    download="Your_Name_CV.pdf" 
+                    id="download-btn"
+                    style={{ textDecoration: 'none', marginTop: "15px" }} // Add your button classes here
+                >
+                    <span className="material-symbols-outlined">download</span>
+                    <p>{t("cvDownload")}</p>
+                </a>
             </div>
 
-            {/* download button */}
-            <a 
-                href="/files/AbdulmalikAlkhalifh - Front End.pdf" 
-                download="Your_Name_CV.pdf" 
-                id="download-btn"
-                style={{ textDecoration: 'none', marginTop: "15px", maxWidth: "380px" }} // Add your button classes here
-            >
-                <span className="material-symbols-outlined">download</span>
-                <p>{t("cvDownload")}</p>
-            </a>
+            
         </div>
 
         <div className="hero-right">

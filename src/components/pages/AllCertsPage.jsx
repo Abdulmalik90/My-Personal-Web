@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
 import { useLanguage } from "../LanguageContext";
 import CertDialog from "../CertDialog";
-import AllCertCard from "../AllCertCard";
-import CertFilterSidebar from "../CertFilterSidebar";
+import AllCertCard from "../AllCertCard"; //TEMP1
+import CertFilterSidebar from "../CertFilterSidebar";   //TEMP2
 import { cert } from "../../data/certificationsData";
 import "../../styles/allCertsPage.css";
 

@@ -1,6 +1,6 @@
 /* app.css */
 :root {
-    --primary: #f7f9fa;
+    --primary: #eeeeee;
     --header-bg: rgba(247, 249, 250, 0.786);
     --secondary: #00aeb1;
     --secondary-hover: #00c0c3;
@@ -12,8 +12,20 @@
     --other-buttons: #ffffff;
     --other-buttons-border: #d3d3d3;
     --other-buttons-hover: #d3d3d3;
+    --code-window: #d6d6d6;
+    --window-header: #343434;
+    --code-keyword : #1b28a2;  /* Indigo */
+    --code-variable: var(--text);
+    --code-operator: #8f34ea; /* Purple */
+    --code-string: #008131; /* Emerald Green */
+    --code-function: #006df1; /* Blue */
+    --code-boolean: #d84491; /* Pink */
+    --code: rgb(0, 0, 0);
     --line: #d8dfe4;
     --card: white;
+    /* about page */
+    --ab-panel: #d2d2d2;
+    --ad-panel-border: rgba(0, 0, 0, 0.263);
 }
 
 /* Dark Mode Variables */
@@ -28,8 +40,20 @@
     --other-buttons: #11181d;
     --other-buttons-border: rgb(54, 54, 54);
     --other-buttons-hover: rgb(54, 54, 54);
+    --code-window: #0f172a;
+    --window-header: #1e293b;
+    --code-keyword : #818cf8;  /* Indigo */
+    --code-variable: var(--text);
+    --code-operator: #c084fc; /* Purple */
+    --code-string: #34d399; /* Emerald Green */
+    --code-function: #60a5fa; /* Blue */
+    --code-boolean: #f472b6; /* Pink */
+    --code: white;
     --line: #161e25;
     --card: #0e171e;
+    /* about page */
+    --ab-panel: #06101a;
+    --ad-panel-border: rgba(255, 255, 255, 0.08);
     /* We keep the --secondary accent colors the same so your buttons stay vibrant! */
 }
 
@@ -65,6 +89,7 @@ html:lang(ar) .sectoin-subtitle {
 
 body {
     background-color: var(--primary);
+    transition: all 0.5s ease-in;
 }
 
 hr {

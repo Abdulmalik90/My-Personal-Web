@@ -9,6 +9,12 @@ export default function Hero() {
     // Relying strictly on the language state to prevent RTL false positives
     const isArabic = language === 'ar'; 
 
+    const handleCopyEmail = (e) => {
+        e.preventDefault(); // لمنع المتصفح من محاولة فتح تطبيق
+        navigator.clipboard.writeText("contact@abdulmalik.dev");
+        alert("تم نسخ الإيميل بنجاح! | The email has been copied!"); // أو يمكنك استخدام مكتبة Toast لرسالة أجمل
+    };
+
     return (
         <div id="hero-container">
         
@@ -55,12 +61,12 @@ export default function Hero() {
                 </button>
             </Link>
 
-            <button id="contact-btn">
+            <a style={{textDecoration: "none"}} href="mailto:contact@abdulmalik.dev"><button id="contact-btn" onClick={handleCopyEmail}>
                 <span style={{ marginRight: "6px", marginLeft: "6px" }} className="material-symbols-outlined">
                 mail
                 </span>
                 {t("heroBtn2")}
-            </button>
+            </button></a>
             </div>
 
             {/* download button */}

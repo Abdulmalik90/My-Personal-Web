@@ -3,12 +3,18 @@ import "../styles/footer.css"
 export default function Footer() {
     const {t} = useLanguage();
 
+    const handleCopyEmail = (e) => {
+        e.preventDefault(); // لمنع المتصفح من محاولة فتح تطبيق
+        navigator.clipboard.writeText("contact@abdulmalik.dev");
+        alert("تم نسخ الإيميل بنجاح! | The email has been copied!"); // أو يمكنك استخدام مكتبة Toast لرسالة أجمل
+    };
+
     return (
         <>
             <h1 className="section-title">{t("footerTitle")}</h1>
             <p className="footer-subtitle">{t("footerSubTitle")}</p>
             <div id="email-link">
-                <a href=""><span class="material-symbols-outlined">mail</span> test@abdulmalik.dev</a>
+                <a href="mailto:contact@abdulmalik.dev" onClick={handleCopyEmail} style={{cursor: "pointer"}}><span class="material-symbols-outlined">mail</span> contact@abdulmalik.dev</a>
             </div>
 
             <div id="footer-link-container">

@@ -17,7 +17,7 @@ export const translation = {
 
         // Skills
         skTopBarLabel: "STACK",
-        skTopBarText: "10 technologies • always learning",
+        skTopBarText: "9 technologies • always learning",
         skTitle1: "Tools",
         skTitle2: "that ",
         skTitle3: "ship",
@@ -235,7 +235,7 @@ export const translation = {
 
         // Skills Section
         skTopBarLabel: "التقنيات",
-        skTopBarText: "10 تقنيات • دائم التعلم",
+        skTopBarText: "9 تقنيات • دائم التعلم",
         skTitle1: "أدوات ",
         skTitle2: " ",
         skTitle3: "للإنجاز",

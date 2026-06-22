@@ -96,9 +96,9 @@ export default function About() {
                         </div>
                         <ul className="ab-currently-list">
                             {currently.map((row, i) => (
-                                <li key={row.label} className="ab-currently-row" style={{ borderBottom: i < currently.length - 1 ? '1px dashed rgba(255,255,255,0.06)' : 'none' }}>
+                                <li key={row.label} className="ab-currently-row" style={{ borderBottom: i < currently.length - 1 ? '1px dashed var(--ad-panel-border)' : 'none' }}>
                                     <span style={{ color: DIM, fontFamily: MONO, fontSize: 11 }}>{row.label}</span>
-                                    <span>{row.value}</span>
+                                    <span style={{color: "var(--text)"}}>{row.value}</span>
                                 </li>
                             ))}
                         </ul>
@@ -117,7 +117,7 @@ export default function About() {
                     {/* Open to panel */}
                     <div className="ab-opento-panel">
                         <div style={{ fontFamily: MONO, fontSize: 11, color: VIOLET, fontWeight: 600, letterSpacing: '0.2em', marginBottom: 8 }}>{t("aboutOpenTo")}</div>
-                        <div style={{ fontSize: 15, color: '#e2e8f0', lineHeight: 1.5 }}>
+                        <div style={{ fontSize: 15, color: 'var(--text-lighter)', lineHeight: 1.5 }}>
                             {t("aboutOpenTo2")}
                         </div>
                     </div>

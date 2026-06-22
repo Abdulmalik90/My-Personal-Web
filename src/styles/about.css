@@ -158,15 +158,15 @@
 
 /* Currently panel */
 .ab-panel {
-    background: #06101a;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--ab-panel);
+    border: 1px solid var(--ad-panel-border);
     border-radius: 14px;
     overflow: hidden;
 }
 
 .ab-panel-header {
     padding: 14px 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid var(--ad-panel-border);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -205,8 +205,8 @@
 }
 
 .ab-stat-card {
-    background: #06101a;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--ab-panel);
+    border: 1px solid var(--ad-panel-border);
     border-radius: 12px;
     padding: 18px 16px;
 }

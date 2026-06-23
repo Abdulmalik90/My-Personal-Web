@@ -157,4 +157,10 @@ export const cert = [
         techTags:["DOM", "JavaScript", "Front-End"],
         mainTopic: "Web Development",
     },
+    {
+        id:27, 
+        photoPath:"/certifications_Imgs/React js.jpg",
+        techTags:["React.js", "Front-End"],
+        mainTopic: "Web Development",
+    },
 ]

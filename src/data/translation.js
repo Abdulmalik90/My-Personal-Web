@@ -186,6 +186,10 @@ export const translation = {
         cert26Title: "Introduction to DOM",
         cert26SubTitle: "Explores how to access, manipulate, and dynamically update HTML elements using the Document Object Model (DOM).",
 
+        // 27. Introduction to DOM
+        cert27Title: "React js",
+        cert27SubTitle: "Covers advanced React js concepts like hooks, redux and router",
+
         // ==================================
         closeDialog: "close",
         viewAllCerts: "View All Certifications",
@@ -403,6 +407,10 @@ export const translation = {
         cert26Title: "مقدمة في DOM",
         cert26SubTitle: "تعلم كيفية الوصول إلى عناصر HTML ومعالجتها باستخدام نموذج كائن المستند (DOM) لتطوير واجهات تفاعلية.",
         viewAllCerts: "عرض كل الشهادات",
+
+        // 27. Introduction to DOM
+        cert27Title: "رياكت js",
+        cert27SubTitle: "تغطي المفاهيم المتقدمة لرياكت مثل هووكس، الريدكس و الروتر",
 
         // All Certification Page
         allFields: "كل المجالات",

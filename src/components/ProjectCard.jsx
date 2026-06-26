@@ -78,7 +78,7 @@ export default function ProjectCard({ id, photoPath, projectURL, gitURL, techTag
                 <img src={photoPath} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', marginLeft: "3px", marginRight: "3px" }} />
             </div>
             <div>
-                <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginBottom: "4px",  }}>
+                <div className={"h4-card-container"} style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginBottom: "4px",  }}>
                     <span style={{ fontFamily: MONO, fontSize: 11, color: 'var(--text-lighter)' }}>{num}</span>
                     <h4 style={{ fontSize: 17, fontWeight: 700, margin: 0, letterSpacing: '-0.01em', color: 'var(--text)' }}>{title}</h4>
                 </div>

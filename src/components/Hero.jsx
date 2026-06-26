@@ -51,7 +51,7 @@ export default function Hero() {
 
             <p className="hero-description">{t("heroSubTitle")}</p>
 
-            <div id="hero-buttons-container">
+            <div id="hero-buttons-container" style={{justifyContent: "center"}}>
                 <div id="hero-inner-buttons-container">
                     <Link to="/projects" style={{ textDecoration: "none" }}>
                         <button id="view-btn" className="glow-effect">

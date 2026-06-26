@@ -64,6 +64,10 @@ header h1:hover {
     color: var(--secondary);
 }
 
+#header-buttons-container #download-btn {
+    max-width: 80%;
+}
+
 #download-btn {
     display: flex;
     justify-content: center;
